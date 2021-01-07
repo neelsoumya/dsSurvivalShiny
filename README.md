@@ -63,7 +63,7 @@ This uses the R shiny framework for federated meta-analysis of survival models.
 	
 	* 
 	
-		``` 
+	
 		
 		library(ShinySurvivalDataSHIELD)
 	
