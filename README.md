@@ -53,8 +53,16 @@ This uses the R shiny framework for federated meta-analysis of survival models.
 
 * Usage
 
-	* ShinySurvivalDataSHIELD::app()
+	* install ShinySurvivalDataSHIELD package
 	
+		``` 
+		
+		library(ShinySurvivalDataSHIELD)
+	
+		ShinySurvivalDataSHIELD::app()
+	
+	        
+		
  * Contact
  
    * Soumya Banerjee and Tom Bishop
