@@ -53,7 +53,7 @@ This uses the R shiny framework for federated meta-analysis of survival models.
 
 * Usage
 
-	* install ShinySurvivalDataSHIELD package
+	* install ShinySurvivalDataSHIELD package, load and run
 	
 	 ```
 	
@@ -62,9 +62,6 @@ This uses the R shiny framework for federated meta-analysis of survival models.
 		library(devtools)
 		
 		devtools::install_github('neelsoumya/dsSurvivalShiny')
-	
-	* load package and run 
-	
 	
 		
 		library(ShinySurvivalDataSHIELD)
