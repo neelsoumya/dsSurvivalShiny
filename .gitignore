@@ -1,0 +1,14 @@
+*.Rproj
+*.DS_Store
+*.Rhistory
+*.tmp
+*.pyc
+*.spyderworkspace
+*.dat
+*.rds
+*.Rdata
+*.csv
+*.tsv
+*.txt
+
+.Rproj.user
