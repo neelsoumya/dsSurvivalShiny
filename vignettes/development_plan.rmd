@@ -2,12 +2,11 @@
 title: "Meta-analysis of survival models in the DataSHIELD platform"
 author: "Soumya Banerjee, Tom Bishop and DataSHIELD technical team"
 date: "1 January 2020"
-output: 
-  pdf_document:
-    toc: true
-    number_sections: yes
-    fig_caption: yes
-urlcolor: blue
+output: rmarkdown::html_vinette()
+vignette: >
+  %\VignetteIndexEntry{Generate LaTeX tables for Data Reports}
+  %\VignetteEngine{rmarkdown::rmarkdown}
+  %\usepackage[utf8]{inputenc}
   
 ---
 
