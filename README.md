@@ -73,7 +73,7 @@ This uses the R shiny framework for federated meta-analysis of survival models.
 
    * Forthcoming	
 
-* Screenshot of GUI
+* Screenshot of graphical user interface
 
 	![Screenshot of GUI](screenshot.png)
 		
