@@ -62,21 +62,20 @@ This uses the R shiny framework for federated meta-analysis of survival models.
 		library(devtools)
 		
 		devtools::install_github('neelsoumya/dsSurvivalShiny')
-	
-		
+			
 		library(ShinySurvivalDataSHIELD)
 	
 		ShinySurvivalDataSHIELD::app()
 	
 
-* Writeup
-
-   * Forthcoming	
-
 * Screenshot of graphical user interface
 
 	![Screenshot of GUI](screenshot.png)
 		
+* Writeup
+
+   * Forthcoming	
+
 * Contact
  
    * Soumya Banerjee and Tom Bishop
