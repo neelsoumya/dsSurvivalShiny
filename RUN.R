@@ -1,0 +1,3 @@
+library(dsSurvivalShiny)
+
+dsSurvivalShiny::app()
