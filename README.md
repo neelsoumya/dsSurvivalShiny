@@ -69,7 +69,8 @@ This uses the R shiny framework for federated meta-analysis of survival models.
 		
 		OR
 		
-		R --no-save < INSTALLER_R.R
+		R --no-save < installer_R.R
+		
 		R --no-save < RUN.R
 	
 
