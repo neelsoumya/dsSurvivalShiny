@@ -84,7 +84,7 @@ This uses the R shiny framework for federated meta-analysis of survival models.
 
 * Contact
  
-   * Soumya Banerjee and Tom Bishop
+   * Soumya Banerjee and Tom Bishop and DataSHIELD technical team
    
    * https://github.com/neelsoumya/dsSurvivalShiny
    
