@@ -17,6 +17,6 @@ app <- function()
       
       # run
       #     https://shiny.rstudio.com/reference/shiny/1.4.0/runApp.html
-      shiny::runApp(system.file('shinyApp', package = 'ShinySurvivalDataSHIELD'))
+      shiny::runApp(system.file('shinyApp', package = 'dsSurvivalShiny'))
 
 }
