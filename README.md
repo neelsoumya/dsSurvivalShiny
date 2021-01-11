@@ -66,6 +66,10 @@ This uses the R shiny framework for federated meta-analysis of survival models.
 		library(dsSurvivalShiny)
 	
 		dsSurvivalShiny::app()
+		
+		OR
+		
+		R --no-save < RUN.R
 	
 
 * Screenshot of graphical user interface
