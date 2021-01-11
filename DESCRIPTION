@@ -1,5 +1,5 @@
 
-Package: ShinySurvivalDataSHIELD
+Package: dsSurvivalShiny
 Title: Shiny app for survival analysis in DataSHIELD
 Version: 1.0
 Author: Soumya Banerjee and Tom Bishop and DataSHIELD technical team <sb2333@cam.ac.uk>
