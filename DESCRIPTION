@@ -22,4 +22,6 @@ Imports:
     dsBase,
     dsBaseClient,
     tinytex,
-    knitr
+    knitr,
+    DSI,
+    DSOpal
