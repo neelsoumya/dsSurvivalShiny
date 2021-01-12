@@ -1,6 +1,4 @@
-Graphical user interface (GUI) for survival model meta-analysis using the DataSHIELD platform.
-
-This uses the R shiny framework for federated meta-analysis of survival models.
+Graphical user interface (GUI) for survival model meta-analysis using the DataSHIELD platform. This uses the R shiny framework for federated meta-analysis of survival models.
 
 * inst
 
@@ -84,7 +82,7 @@ This uses the R shiny framework for federated meta-analysis of survival models.
 
 * Contact
  
-   * Soumya Banerjee and Tom Bishop and DataSHIELD technical team
+   * Soumya Banerjee, Tom Bishop and DataSHIELD technical team
    
    * https://github.com/neelsoumya/dsSurvivalShiny
    
