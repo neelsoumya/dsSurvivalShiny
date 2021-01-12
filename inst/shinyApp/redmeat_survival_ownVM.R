@@ -17,7 +17,7 @@
 library(survival)
 library(metafor)
 library(ggplot2)
-library(survminer)
+#library(survminer)
 require('DSI')
 require('DSOpal')
 require('dsBaseClient')
@@ -71,6 +71,12 @@ builder$append(server = "study9",
                url = "http://192.168.56.100:8080",
                user = "administrator", password = "datashield_test&",
                table = "test.meat_DUMMY", driver = "OpalDriver")
+
+# golestan data
+#builder$append(server = "study10",
+#               url = "https://opal-dev.mrc-epid.cam.ac.uk:8443",
+#               user = "soumya", password = "interconnect2021",
+#               table = "MEAT.golestan_pattern_harm", driver = "OpalDriver")
 
 logindata <- builder$build()
 
