@@ -20,3 +20,6 @@ app <- function()
       shiny::runApp(system.file('shinyApp', package = 'dsSurvivalShiny'))
 
 }
+
+# TODO: shiny extensions
+#      https://shiny.rstudio.com/articles/progress.html
