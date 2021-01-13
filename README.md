@@ -9,6 +9,11 @@ Graphical user interface (GUI) for survival model meta-analysis using the DataSH
 
     * installation scripts in R and UNIX
     
+* RUN.R
+
+    * script to start shiny server
+    
+    * R --no-save < RUN.R
    
 * vignettes
 
