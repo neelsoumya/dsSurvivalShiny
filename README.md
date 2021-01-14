@@ -53,6 +53,10 @@ Graphical user interface (GUI) for survival model meta-analysis using the DataSH
       
      	* https://opal-demo.obiba.org/ui/index.html#!admin 
 	
+    
+     * Synthetic data
+     
+        * Forthcoming 
 
 * Usage
 
