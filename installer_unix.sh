@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Installation steps for R and dependencies for devtools on Unix
+# Installation steps for R and dependencies for devtools on Unix platforms
 
 sudo apt-get install r-base
 
@@ -26,5 +26,5 @@ sudo apt-get install gdebi-core
 wget https://download2.rstudio.org/server/xenial/amd64/rstudio-server-1.3.1093-amd64.deb
 sudo gdebi rstudio-server-1.3.1093-amd64.deb
 
-
+# Isntall packages for building man
 sudo apt-get install texinfo
