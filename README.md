@@ -89,6 +89,10 @@ Graphical user interface (GUI) for survival model meta-analysis using the DataSH
 
    * Forthcoming	
 
+* Citation
+
+   * Forthcoming
+
 * Contact
  
    * Soumya Banerjee, Tom Bishop and DataSHIELD technical team
