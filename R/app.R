@@ -1,9 +1,10 @@
-#' Launch the application ShinySurvivalDataSHIELD
+#' Launch the application dsSurvivalShiny
 #' @export
 
 app <- function()
 {
       # app for shiny server
+      
       
       # load libraries
       library(shiny)
