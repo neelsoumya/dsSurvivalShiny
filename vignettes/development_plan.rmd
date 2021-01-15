@@ -475,6 +475,7 @@ The functions planned are:
     * equivalent of survival::survSplit() as another approach for time dependent covariates  
 
 
+
 # Graphical user interface for survival analysis
 
 We will create a graphical user interface for survival models based on R shiny. The interface will allow the following:
