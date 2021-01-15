@@ -5,8 +5,9 @@ app <- function()
 {
       # app for shiny server
       
-      
+      #####################
       # load libraries
+      #####################
       library(shiny)
       library(metafor)
       library(rmarkdown)
@@ -16,8 +17,10 @@ app <- function()
       library(tinytex)
       library(knitr)
       
+      #####################################################################
       # run
       #     https://shiny.rstudio.com/reference/shiny/1.4.0/runApp.html
+      #####################################################################
       shiny::runApp(system.file('shinyApp', package = 'dsSurvivalShiny'))
 
 }
