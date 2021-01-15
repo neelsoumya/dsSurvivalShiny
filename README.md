@@ -60,7 +60,7 @@ Graphical user interface (GUI) for survival model meta-analysis using the DataSH
 
 * Usage
 
-	* install ShinySurvivalDataSHIELD package, load and run
+	* install ShinySurvivalDataSHIELD package, load package and run
 	
 	 ```
 	
