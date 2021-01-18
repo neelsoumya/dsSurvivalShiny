@@ -30,12 +30,12 @@ require('dsBaseClient')
 #################################################
 builder <- DSI::newDSLoginBuilder()
 
-builder$append(server = "study1", 
+builder$append(server = "France", 
                url = "http://192.168.56.100:8080/", 
                user = "administrator", password = "datashield_test&", 
                table = "test.meat_country1_harmonized", driver = "OpalDriver")
 
-builder$append(server = "study2", 
+builder$append(server = "Italy", 
                url = "http://192.168.56.100:8080/", 
                user = "administrator", password = "datashield_test&", 
                table = "test.meat_country2_harmonized", driver = "OpalDriver")
