@@ -491,32 +491,32 @@ for (i_temp_counter in c(1:length(coxph_model_full)))
 }
 
 # list of hazard ratios for first parameter over 2 studies 
-input_logHR = c(coxph_model_full$study1$coefficients[3,2], 
-                coxph_model_full$study2$coefficients[3,2], 
-                coxph_model_full$study3$coefficients[3,2],
-                coxph_model_full$study4$coefficients[3,2],
-                coxph_model_full$study5$coefficients[3,2],
-                coxph_model_full$study7$coefficients[3,2],
-                coxph_model_full$study8$coefficients[3,2]
-                )
+#input_logHR = c(coxph_model_full$study1$coefficients[3,2], 
+#                coxph_model_full$study2$coefficients[3,2], 
+#                coxph_model_full$study3$coefficients[3,2],
+#                coxph_model_full$study4$coefficients[3,2],
+#                coxph_model_full$study5$coefficients[3,2],
+#                coxph_model_full$study7$coefficients[3,2],
+#                coxph_model_full$study8$coefficients[3,2]
+#                )
 
-input_se    = c(coxph_model_full$study1$coefficients[3,3], 
-                coxph_model_full$study2$coefficients[3,3], 
-                coxph_model_full$study3$coefficients[3,3],
-                coxph_model_full$study4$coefficients[3,3],
-                coxph_model_full$study5$coefficients[3,3],
-                coxph_model_full$study7$coefficients[3,3],
-                coxph_model_full$study8$coefficients[3,3]
-              )
+#input_se    = c(coxph_model_full$study1$coefficients[3,3], 
+#                coxph_model_full$study2$coefficients[3,3], 
+#                coxph_model_full$study3$coefficients[3,3],
+#                coxph_model_full$study4$coefficients[3,3],
+#                coxph_model_full$study5$coefficients[3,3],
+#                coxph_model_full$study7$coefficients[3,3],
+#                coxph_model_full$study8$coefficients[3,3]
+#              )
 
 
-meta_model <- metafor::rma(input_logHR, sei = input_se, method = 'REML')
-summary(meta_model)
+#meta_model <- metafor::rma(input_logHR, sei = input_se, method = 'REML')
+#summary(meta_model)
 
 #######################################################
 # forest plots of final meta-analyzed hazard ratios
 #######################################################
-metafor::forest.rma(x = meta_model)
+#metafor::forest.rma(x = meta_model)
 
 #######################################################
 # save model output and logging information to disk
