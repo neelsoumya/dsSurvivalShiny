@@ -40,27 +40,27 @@ builder$append(server = "Italy",
                user = "administrator", password = "datashield_test&", 
                table = "test.meat_country2_harmonized", driver = "OpalDriver")
 
-builder$append(server = "study3",
+builder$append(server = "Spain",
                url = "http://192.168.56.100:8080/",
                user = "administrator", password = "datashield_test&",
                table = "test.meat_country3_harmonized", driver = "OpalDriver")
 
-builder$append(server = "study4",
+builder$append(server = "UK",
                url = "http://192.168.56.100:8080/",
                user = "administrator", password = "datashield_test&",
                table = "test.meat_country4_harmonized", driver = "OpalDriver")
 
-builder$append(server = "study5",
+builder$append(server = "Netherlands",
                url = "http://192.168.56.100:8080/",
                user = "administrator", password = "datashield_test&",
                table = "test.meat_country5_harmonized", driver = "OpalDriver")
 
-builder$append(server = "study7",
+builder$append(server = "Germany",
                url = "http://192.168.56.100:8080/",
                user = "administrator", password = "datashield_test&",
                table = "test.meat_country7_harmonized", driver = "OpalDriver")
 
-builder$append(server = "study8",
+builder$append(server = "Sweden",
                url = "http://192.168.56.100:8080/",
                user = "administrator", password = "datashield_test&",
                table = "test.meat_country8_harmonized", driver = "OpalDriver")
