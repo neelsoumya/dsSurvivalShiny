@@ -223,6 +223,8 @@ shinyServer(function(input, output) {
     
     # TODO: add label for studies
     #       https://www.rdocumentation.org/packages/metafor/versions/2.4-0/topics/forest.rma
+    #      use slab vector of labels
+    #       https://www.metafor-project.org/doku.php/plots:forest_plot 
     metafor::forest.rma(x = meta_model)  
     
     ############################################# 
