@@ -221,6 +221,21 @@ shinyServer(function(input, output) {
     meta_model <- metafor::rma(input_logHR, sei = input_se, method = 'REML')
     summary(meta_model)
     
+    # TODO: add label for studies
+    #       https://www.rdocumentation.org/packages/metafor/versions/2.4-0/topics/forest.rma
+    metafor::forest.rma(x = meta_model)  
+    
+    ############################################# 
+    # TODO: save plot
+    ############################################# 
+    # pdf(file = 'forest_plot_survival.pdf') 
+     
+    # metafor::forest.rma(x = meta_model)
+    
+    # save forest plot
+    # dev.off()
+     
+     
     ######################################################################################################
     # Logging functionality
     #    1. summary statistics
@@ -276,17 +291,7 @@ shinyServer(function(input, output) {
     #            append = FALSE, sep = ',')
      
 
-    ############################################# 
-    # TODO: save plot
-    ############################################# 
-    # pdf(file = 'forest_plot_survival.pdf') 
-     
-    # metafor::forest.rma(x = meta_model)
-    
-    # save forest plot
-    # dev.off()
-     
-    metafor::forest.rma(x = meta_model) 
+   
     
     
     # TODO: create another tab(s) for
