@@ -86,6 +86,9 @@ logindata <- builder$build()
 
 # opals <- datashield.login(logins=logindata,assign=TRUE)
 # Log onto the remote Opal training servers
+
+# list of all variables to be loaded
+list_all_var_load <- list("PREV_DIAB", "AGE_BASE", "SEX", "TYPE_DIAB", "E_INTAKE")
 connections <- DSI::datashield.login(logins = logindata, assign = TRUE, symbol = "D") 
 
 #############################################
