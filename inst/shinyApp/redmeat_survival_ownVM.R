@@ -67,16 +67,20 @@ builder$append(server = "study8",
 
 # CAUTION
 # DUMMY DATA
-builder$append(server = "study9",
-               url = "http://192.168.56.100:8080",
-               user = "administrator", password = "datashield_test&",
-               table = "test.meat_DUMMY", driver = "OpalDriver")
+# builder$append(server = "study9",
+#                url = "http://192.168.56.100:8080",
+#                user = "administrator", password = "datashield_test&",
+#                table = "test.meat_DUMMY", driver = "OpalDriver")
 
-# golestan data
-#builder$append(server = "study10",
-#               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
-#               user = "soumya", password = "interconnect2021",
-#               table = "MEAT.whi_pattern_harm", driver = "OpalDriver")
+# TODO: include meat9 study and modify all code to have study 10
+# TODO: modofy next call to be study10
+# TODO: metafor::forest.rma() modify to have country names
+
+# WHI data
+builder$append(server = "study9",
+               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
+               user = "soumya", password = "interconnect2021",
+               table = "MEAT.whi_pattern_harm", driver = "OpalDriver")
 
 logindata <- builder$build()
 
