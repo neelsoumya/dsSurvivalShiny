@@ -67,10 +67,10 @@ builder$append(server = "study8",
 
 # CAUTION
 # DUMMY DATA
-# builder$append(server = "study9",
-#                url = "http://192.168.56.100:8080",
-#                user = "administrator", password = "datashield_test&",
-#                table = "test.meat_DUMMY", driver = "OpalDriver")
+builder$append(server = "study9",
+                url = "http://192.168.56.100:8080",
+                user = "administrator", password = "datashield_test&",
+                table = "test.meat_DUMMY", driver = "OpalDriver")
 
 # TODO: include meat9 study and modify all code to have study 10
 # TODO: modofy next call to be study10
@@ -433,18 +433,18 @@ dsBaseClient::ds.Surv(time='PRENTICETIME_SELF', event = 'EVENT_SELF', objectname
 #	 + EDUCATION + E_INTAKE
 #############################################
 #dsBaseClient::ds.Surv(time='STARTTIME', time2='ENDTIME', event = 'EVENT', objectname='surv_object2', type='counting')
-coxph_model_full <- dsBaseClient::ds.coxph.SLMA(formula = 'surv_object_prentice ~ AGEBASE + GENDER + REDMEATTOTAL + ALCOHOL + PA + SMOKING + EDUCATION + E_INTAKE')
+# coxph_model_full <- dsBaseClient::ds.coxph.SLMA(formula = 'surv_object_prentice ~ AGEBASE + GENDER + REDMEATTOTAL + ALCOHOL + PA + SMOKING + EDUCATION + E_INTAKE')
 
-dsBaseClient::ds.coxph.SLMA(formula = 'surv_object ~ AGEBASE + GENDER + REDMEATTOTAL + ALCOHOL + PA + SMOKING + EDUCATION + E_INTAKE',
-                            combine_with_metafor = TRUE)
+# dsBaseClient::ds.coxph.SLMA(formula = 'surv_object ~ AGEBASE + GENDER + REDMEATTOTAL + ALCOHOL + PA + SMOKING + EDUCATION + E_INTAKE',
+#                            combine_with_metafor = TRUE)
 
 # all individual ed meat exposures
-dsBaseClient::ds.coxph.SLMA(formula = 'surv_object_prentice ~ AGEBASE + GENDER + REDMEAT + POULTRY + OFFALS + ALCOHOL + PA + SMOKING + EDUCATION + E_INTAKE',
-                            combine_with_metafor = TRUE)
+# dsBaseClient::ds.coxph.SLMA(formula = 'surv_object_prentice ~ AGEBASE + GENDER + REDMEAT + POULTRY + OFFALS + ALCOHOL + PA + SMOKING + EDUCATION + E_INTAKE',
+#                            combine_with_metafor = TRUE)
 
 # Prentice weighted Cox proportional hazards model
-dsBaseClient::ds.coxph.SLMA(formula = 'surv_object_prentice ~ AGEBASE + GENDER + REDMEATTOTAL + ALCOHOL + PA + SMOKING + EDUCATION + E_INTAKE',
-                            combine_with_metafor = TRUE)
+# dsBaseClient::ds.coxph.SLMA(formula = 'surv_object_prentice ~ AGEBASE + GENDER + REDMEATTOTAL + ALCOHOL + PA + SMOKING + EDUCATION + E_INTAKE',
+#                            combine_with_metafor = TRUE)
 
 # for secondary outcome measure
 #dsBaseClient::ds.coxph.SLMA(formula = 'surv_object_prentice_self ~ AGEBASE + GENDER + REDMEATTOTAL + ALCOHOL + PA + SMOKING + EDUCATION + E_INTAKE',
@@ -453,7 +453,7 @@ dsBaseClient::ds.coxph.SLMA(formula = 'surv_object_prentice ~ AGEBASE + GENDER +
 #################################
 # summary of Survival object
 #################################
-dsBaseClient::ds.summary(x = 'surv_object')
+# dsBaseClient::ds.summary(x = 'surv_object')
 
 #################################
 # TODO: Plot survival curves
@@ -475,22 +475,21 @@ dsBaseClient::ds.summary(x = 'surv_object')
 #               fit_model <- survival::survfit(coxph_model, newdata = 'D')
 #               return (fit_model)
 
-dsBaseClient::ds.survfit(formula='surv_object~1', objectname='survfit_object')
-# verify that object has been created
-dsBaseClient::ds.ls()
+# dsBaseClient::ds.survfit(formula='surv_object~1', objectname='survfit_object')
+
 
 ####################################
 # Diagnostics
 #   check assumptions of Cox model
 ####################################
-cat("Checking diagnostics and validity of Cox proportional hazards assumptions ... \n")
-dsBaseClient::ds.coxphSLMAassign(formula = 'surv_object_prentice ~ AGEBASE + GENDER + REDMEATTOTAL + ALCOHOL + PA + SMOKING + EDUCATION + E_INTAKE', 
-                                 objectname = 'coxph_model_server_side')
+# cat("Checking diagnostics and validity of Cox proportional hazards assumptions ... \n")
+# dsBaseClient::ds.coxphSLMAassign(formula = 'surv_object_prentice ~ AGEBASE + GENDER + REDMEATTOTAL + ALCOHOL + PA + SMOKING + EDUCATION + E_INTAKE', 
+#                                 objectname = 'coxph_model_server_side')
 
-dsBaseClient::ds.coxphSummary(x = 'coxph_model_server_side')
+# dsBaseClient::ds.coxphSummary(x = 'coxph_model_server_side')
 
-dsBaseClient::ds.cox.zphSLMA(fit = 'coxph_model_server_side', 
-                             transform = "identity")
+# dsBaseClient::ds.cox.zphSLMA(fit = 'coxph_model_server_side', 
+#                             transform = "identity")
 
 
 ################################
