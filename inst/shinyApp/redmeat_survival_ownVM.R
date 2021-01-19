@@ -30,37 +30,37 @@ require('dsBaseClient')
 #################################################
 builder <- DSI::newDSLoginBuilder()
 
-builder$append(server = "France", 
+builder$append(server = "study1", 
                url = "http://192.168.56.100:8080/", 
                user = "administrator", password = "datashield_test&", 
                table = "test.meat_country1_harmonized", driver = "OpalDriver")
 
-builder$append(server = "Italy", 
+builder$append(server = "study2", 
                url = "http://192.168.56.100:8080/", 
                user = "administrator", password = "datashield_test&", 
                table = "test.meat_country2_harmonized", driver = "OpalDriver")
 
-builder$append(server = "Spain",
+builder$append(server = "study3",
                url = "http://192.168.56.100:8080/",
                user = "administrator", password = "datashield_test&",
                table = "test.meat_country3_harmonized", driver = "OpalDriver")
 
-builder$append(server = "UK",
+builder$append(server = "study4",
                url = "http://192.168.56.100:8080/",
                user = "administrator", password = "datashield_test&",
                table = "test.meat_country4_harmonized", driver = "OpalDriver")
 
-builder$append(server = "Netherlands",
+builder$append(server = "study5",
                url = "http://192.168.56.100:8080/",
                user = "administrator", password = "datashield_test&",
                table = "test.meat_country5_harmonized", driver = "OpalDriver")
 
-builder$append(server = "Germany",
+builder$append(server = "study7",
                url = "http://192.168.56.100:8080/",
                user = "administrator", password = "datashield_test&",
                table = "test.meat_country7_harmonized", driver = "OpalDriver")
 
-builder$append(server = "Sweden",
+builder$append(server = "study8",
                url = "http://192.168.56.100:8080/",
                user = "administrator", password = "datashield_test&",
                table = "test.meat_country8_harmonized", driver = "OpalDriver")
