@@ -91,7 +91,7 @@ logindata <- builder$build()
 list_all_var_load <- list("PREV_DIAB", "AGE_BASE", "SEX", "TYPE_DIAB", "E_INTAKE", "CASE_OBJ_SELF",
                           "CASE_OBJ", "FUP_OBJ", "FUP_OBJ_SELF", "NUTS_SEEDS", "BMI", "EDUCATION",
                           "SMOKING", "PA", "ALCOHOL", "BMI_CAT", "REDMEATTOTAL", "REDMEAT", 
-                          "POULTRY", "OFFALS")
+                          "POULTRY", "OFFALS", "i_status_out_cohort")
 # prototype is
 #     https://github.com/datashield/DSI/blob/master/R/datashield.login.R
 connections <- DSI::datashield.login(logins = logindata, assign = TRUE, 
