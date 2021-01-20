@@ -65,12 +65,16 @@ builder$append(server = "study8",
                user = "administrator", password = "datashield_test&",
                table = "test.meat_country8_harmonized", driver = "OpalDriver")
 
-# CAUTION
-# DUMMY DATA
 builder$append(server = "study9",
                 url = "http://192.168.56.100:8080",
                 user = "administrator", password = "datashield_test&",
-                table = "test.meat_DUMMY", driver = "OpalDriver")
+                table = "test.meat_country9_harmonized", driver = "OpalDriver")
+# CAUTION
+# DUMMY DATA
+# builder$append(server = "study9",
+#                 url = "http://192.168.56.100:8080",
+#                 user = "administrator", password = "datashield_test&",
+#                 table = "test.meat_DUMMY", driver = "OpalDriver")
 
 # TODO: include meat9 study and modify all code to have study 10
 # TODO: modofy next call to be study10
