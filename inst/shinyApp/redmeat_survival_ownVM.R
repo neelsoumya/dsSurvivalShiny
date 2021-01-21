@@ -127,7 +127,7 @@ dsBaseClient::ds.length(x = 'D$SEX',
                         datasources = connections)
 
 dsBaseClient::ds.dataFrameSubset(df.name = 'E_temp', 
-                                 V1.name = 'D$AGE_BASE', 
+                                 V1.name = 'E_temp$AGE_BASE', 
                                  V2.name = '18', 
                                  Boolean.operator = '>=', 
                                  newobj = 'E_temp2',
@@ -139,7 +139,7 @@ dsBaseClient::ds.length(x = 'E_temp2$SEX',
                         datasources = connections)
 
 dsBaseClient::ds.dataFrameSubset(df.name = 'E_temp2', 
-                                 V1.name = 'D$TYPE_DIAB', 
+                                 V1.name = 'E_temp2$TYPE_DIAB', 
                                  V2.name = '1', 
                                  Boolean.operator = '!=', 
                                  newobj = 'E_temp3',
