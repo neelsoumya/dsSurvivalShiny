@@ -501,10 +501,10 @@ dsBaseClient::ds.Surv(time='PRENTICETIME_SELF', event = 'EVENT_SELF', objectname
 ################################
 
 # TODO: for each study
-for (i_temp_counter in c(1:length(coxph_model_full)))
-{
-  
-}
+#for (i_temp_counter in c(1:length(coxph_model_full)))
+#{
+#  
+#}
 
 # list of hazard ratios for first parameter over 2 studies 
 #input_logHR = c(coxph_model_full$study1$coefficients[3,2], 
