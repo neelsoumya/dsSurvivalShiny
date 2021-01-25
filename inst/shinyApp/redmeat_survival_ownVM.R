@@ -534,7 +534,6 @@ dsBaseClient::ds.Surv(time='PRENTICETIME_SELF', event = 'EVENT_SELF', objectname
 
 
 #meta_model <- metafor::rma(input_logHR, sei = input_se, method = 'REML')
-#summary(meta_model)
 
 #######################################################
 # forest plots of final meta-analyzed hazard ratios
