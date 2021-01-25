@@ -1,6 +1,6 @@
 Graphical user interface (GUI) for privacy preserving survival model meta-analysis using the DataSHIELD platform. This uses the R shiny framework for federated meta-analysis of survival models.
 
-* inst
+* inst/shinyApp
 
     * folder with all R files
     
@@ -95,7 +95,7 @@ Graphical user interface (GUI) for privacy preserving survival model meta-analys
 
 * Contact
  
-   * Soumya Banerjee, Tom Bishop and DataSHIELD technical team
+   * Soumya Banerjee and Tom Bishop and DataSHIELD technical team
    
    * https://github.com/neelsoumya/dsSurvivalShiny
    
