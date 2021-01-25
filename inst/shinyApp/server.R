@@ -228,6 +228,7 @@ shinyServer(function(input, output) {
     summary(meta_model)
     
     # TODO: add bigger font for HR for studies
+    #       https://www.metafor-project.org/doku.php/plots 
     #       https://www.rdocumentation.org/packages/metafor/versions/2.4-0/topics/forest.rma
     #      use slab vector of labels
     #       https://www.metafor-project.org/doku.php/plots:forest_plot 
