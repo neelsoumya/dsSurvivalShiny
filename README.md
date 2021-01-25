@@ -95,7 +95,7 @@ Graphical user interface (GUI) for privacy preserving survival model meta-analys
 
 * Contact
  
-   * Soumya Banerjee and Tom Bishop and DataSHIELD technical team
+   * Soumya Banerjee, Tom Bishop and DataSHIELD technical team
    
    * https://github.com/neelsoumya/dsSurvivalShiny
    
