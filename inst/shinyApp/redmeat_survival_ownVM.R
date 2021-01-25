@@ -87,10 +87,10 @@ builder$append(server = "study10",
                table = "MEAT.whi_pattern_harm", driver = "OpalDriver")
 
 # CARDIA data
-#builder$append(server = "study11",
-#               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
-#               user = "soumya", password = "interconnect2021",
-#               table = "MEAT.cardia_pattern_harm", driver = "OpalDriver")
+builder$append(server = "study11",
+               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
+               user = "soumya", password = "interconnect2021",
+               table = "MEAT.cardia_pattern_harm", driver = "OpalDriver")
 
 
 logindata <- builder$build()
