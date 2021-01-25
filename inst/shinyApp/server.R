@@ -206,7 +206,8 @@ shinyServer(function(input, output) {
                     coxph_model_full$study7$coefficients[1,2],
                     coxph_model_full$study8$coefficients[1,2],
                     coxph_model_full$study9$coefficients[1,2],
-                    coxph_model_full$study10$coefficients[1,2]
+                    coxph_model_full$study10$coefficients[1,2],
+                    coxph_model_full$study11$coefficients[1,2]
     )
     
     # list of standard errors for third parameter over all 7 studies 
@@ -218,19 +219,20 @@ shinyServer(function(input, output) {
                     coxph_model_full$study7$coefficients[1,3],
                     coxph_model_full$study8$coefficients[1,3],
                     coxph_model_full$study9$coefficients[1,3],
-                    coxph_model_full$study10$coefficients[1,3]
+                    coxph_model_full$study10$coefficients[1,3],
+                    coxph_model_full$study11$coefficients[1,3]
     )
     
     
     meta_model <- metafor::rma(input_logHR, sei = input_se, method = 'REML')
     summary(meta_model)
     
-    # TODO: add label for studies
+    # TODO: add bigger font for HR for studies
     #       https://www.rdocumentation.org/packages/metafor/versions/2.4-0/topics/forest.rma
     #      use slab vector of labels
     #       https://www.metafor-project.org/doku.php/plots:forest_plot 
     metafor::forest.rma(x = meta_model,
-                        slab = c('France', 'Italy', 'Spain', 'UK', 'Netherlands', 'Germany', 'Sweden', 'Denmark', 'WHI'))  # Denmark, WHI
+                        slab = c('France', 'Italy', 'Spain', 'UK', 'Netherlands', 'Germany', 'Sweden', 'Denmark', 'WHI', 'CARDIA'))  # Denmark, WHI
     
     ############################################# 
     # TODO: save plot
