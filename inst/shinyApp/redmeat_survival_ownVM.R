@@ -1,5 +1,5 @@
 ######################################################################################
-# Meta-analysis of survival models in DataSHIELD for the red meat InterAct project
+# Meta-analysis of survival models in DataSHIELD for the red meat project
 #	red meat analysis
 #	
 # Additional code in:
