@@ -232,7 +232,9 @@ shinyServer(function(input, output) {
     #       https://www.rdocumentation.org/packages/metafor/versions/2.4-0/topics/forest.rma
     #      use slab vector of labels
     #       https://www.metafor-project.org/doku.php/plots:forest_plot 
+    #   https://www.rdocumentation.org/packages/metafor/versions/2.4-0/topics/forest.rma 
     metafor::forest.rma(x = meta_model,
+                        digits = 6, # 6 decimal places round
                         slab = c('France', 'Italy', 'Spain', 'UK', 'Netherlands', 'Germany', 'Sweden', 'Denmark', 'WHI', 'CARDIA'))  # Denmark, WHI
     
     ############################################# 
