@@ -14,6 +14,12 @@ Graphical user interface (GUI) for privacy preserving survival model meta-analys
     * script to start shiny server
     
     * R --no-save < RUN.R
+    
+* synthetic_data_generator.R
+
+    * script to generate synthetic data
+    
+    * R --no-save < synthetic_data_generator.R
    
 * vignettes
 
@@ -38,6 +44,8 @@ Graphical user interface (GUI) for privacy preserving survival model meta-analys
       * https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/367656962/Vagrant
       
       * https://data2knowledge.atlassian.net/wiki/spaces/DSDEV/pages/12943447/Build+your+own+DataSHIELD+VMs
+      
+      * https://docs.github.com/en/packages/guides/configuring-docker-for-use-with-github-packages
       
 * Link to demo website 
 
