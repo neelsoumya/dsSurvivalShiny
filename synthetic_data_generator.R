@@ -21,3 +21,11 @@ def <- defData(def, varname = "visits", dist = "poisson",
 # generate data
 dd <- genData(1000, def)
 dd
+
+# 1. save as csv
+# 2. upload to VM dev v2
+# 3. Save VM and make it available
+
+
+# TODO: use dsData
+#       https://github.com/datashield/DSData
