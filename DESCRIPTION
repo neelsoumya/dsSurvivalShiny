@@ -24,4 +24,5 @@ Imports:
     tinytex,
     knitr,
     DSI,
-    DSOpal
+    DSOpal,
+    simstudy
