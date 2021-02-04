@@ -207,7 +207,8 @@ shinyServer(function(input, output) {
                     coxph_model_full$study8$coefficients[1,2],
                     coxph_model_full$study9$coefficients[1,2],
                     coxph_model_full$study10$coefficients[1,2],
-                    coxph_model_full$study11$coefficients[1,2]
+                    coxph_model_full$study11$coefficients[1,2],
+                    coxph_model_full$study12$coefficients[1,2]
     )
     
     # list of standard errors for third parameter over all 7 studies 
@@ -220,7 +221,8 @@ shinyServer(function(input, output) {
                     coxph_model_full$study8$coefficients[1,3],
                     coxph_model_full$study9$coefficients[1,3],
                     coxph_model_full$study10$coefficients[1,3],
-                    coxph_model_full$study11$coefficients[1,3]
+                    coxph_model_full$study11$coefficients[1,3],
+                    coxph_model_full$study12$coefficients[1,3]
     )
     
     
@@ -236,7 +238,7 @@ shinyServer(function(input, output) {
     metafor::forest.rma(x = meta_model,
                         digits = 6, # 6 decimal places round
                         at = c(0.996, 1, 1.004, 1.008),   # ticks for hazard ratio at these places
-                        slab = c('France', 'Italy', 'Spain', 'UK', 'Netherlands', 'Germany', 'Sweden', 'Denmark', 'WHI', 'CARDIA'))  # Denmark, WHI
+                        slab = c('France', 'Italy', 'Spain', 'UK', 'Netherlands', 'Germany', 'Sweden', 'Denmark', 'WHI', 'CARDIA', 'Golestan'))  # Denmark, WHI
     
     ############################################# 
     # TODO: save plot
