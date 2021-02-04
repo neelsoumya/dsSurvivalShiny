@@ -373,6 +373,14 @@ metafor::forest.rma(x = meta_model)
 
 ```    
 
+# Plotting of privacy-preserving survival curves
+
+We also plot privacy preserving survival curves.
+
+```{r, echo = FALSE}
+dsBaseClient::ds.plotsurvfit(formula = 'survfit_object')
+```
+
 \newpage
    
 ```{r, include=FALSE}
