@@ -91,6 +91,11 @@ builder$append(server = "study11",
                user = "soumya", password = "interconnect2021",
                table = "MEAT.cardia_pattern_harm", driver = "OpalDriver")
 
+# Golestan data
+builder$append(server = "study12",
+               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
+               user = "soumya", password = "interconnect2021",
+               table = "MEAT.golestan_pattern_harm", driver = "OpalDriver")
 
 logindata <- builder$build()
 
