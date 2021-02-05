@@ -1,7 +1,7 @@
 ---
 title: "Summary of analysis for survival model meta-analysis"
 author: "Soumya Banerjee and Tom Bishop"
-date: "1 January 2021"
+date: "1 February 2021"
 output: 
   pdf_document:
     toc: true
@@ -126,20 +126,19 @@ We use the *metafor* package for meta-analysis. We show a forest plot below.
 
 metafor::forest.rma(x = meta_model)
 
+# Plotting of privacy-preserving survival curves
+
+# We also plot privacy preserving survival curves.
+
+# dsBaseClient::ds.survfit(formula='surv_object_prentice~1', objectname='survfit_object')
+# dsBaseClient::ds.plotsurvfit(formula = 'survfit_object')
+
+```
+
+
 ```    
 
 
-# Plotting of privacy-preserving survival curves
-
-We also plot privacy preserving survival curves.
-
-```{r, include = FALSE}
-dsBaseClient::ds.survfit(formula='surv_object_prentice~1', objectname='survfit_object')
-```
-
-```{r, echo = FALSE}
-dsBaseClient::ds.plotsurvfit(formula = 'survfit_object')
-```
 
 
 # References
