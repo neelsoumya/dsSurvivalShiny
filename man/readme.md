@@ -1,1 +1,1 @@
-manual directory for documentation
+Manual directory for documentation
