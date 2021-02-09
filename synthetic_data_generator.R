@@ -23,6 +23,9 @@ dd <- genData(1000, def)
 dd
 
 # 1. save as csv
+filename_synthetic_data = "df_synthetic_data.csv"
+write.table(dd, file=filename_synthetic_data,
+            row.names = FALSE, quote=FALSE, append = FALSE, sep = ",")  #, col.names = NA)
 # 2. upload to VM dev v2
 # 3. Save VM and make it available
 
