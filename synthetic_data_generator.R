@@ -9,8 +9,15 @@
 # load library
 #####################
 library(simstudy)
+library(haven)
+#library(tidyverse)
+#library(data.table)
+#library(sqldf)
+#library(dplyr)
 
+########################
 # generate definition
+########################
 def <- defData(varname = "age", dist = "normal", 
                formula = 10, variance = 2)
 def <- defData(def, varname = "female", dist = "binary", 
@@ -29,7 +36,9 @@ def <- defData(def, varname = "NUTS_SEEDS", dist = "normal",
                formula = 100, variance = 10)
 
 
+###################
 # generate data
+###################
 dd <- genData(1000, def)
 dd
 
@@ -37,7 +46,10 @@ dd
 filename_synthetic_data = "df_synthetic_data.csv"
 write.table(dd, file=filename_synthetic_data,
             row.names = FALSE, quote=FALSE, append = FALSE, sep = ",")  #, col.names = NA)
+
 # 2. convert to dta format
+haven::write_dta(data = dd,
+                 path ='C:/Users/sb2333/Downloads/data_synthetic_country1.dta')
 # 2. upload to VM dev v2
 # 3. Save VM and make it available
 
