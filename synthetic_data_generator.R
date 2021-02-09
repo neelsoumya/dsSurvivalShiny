@@ -24,6 +24,8 @@ def <- defData(varname = "AGE_BASE", dist = "normal",
                formula = 10, variance = 2)
 def <- defData(def, varname = "female", dist = "binary", 
     formula = "-2 + age * 0.1", link = "logit")
+def <- defData(def, varname = "SEX", dist = "binary", 
+    formula = "-2 + age * 0.1", link = "logit")
 def <- defData(def, varname = "visits", dist = "poisson", 
     formula = "1.5 - 0.2 * age + 0.5 * female", link = "log")
 def <- defData(def, varname = "REDMEAT", dist = "normal", 
@@ -40,6 +42,14 @@ def <- defData(def, varname = "BMI", dist = "normal",
                formula = 23, variance = 1)
 def <- defData(def, varname = "BMI_CAT", dist = "normal",
                formula = 23, variance = 1)
+def <- defData(def, varname = "ALCOHOL", dist = "normal",
+               formula = 42, variance = 5)
+
+# PA factor
+# "PREV_DIAB", "AGE_BASE", "SEX", "TYPE_DIAB", "E_INTAKE", "CASE_OBJ_SELF",
+#                          "CASE_OBJ", "FUP_OBJ", "FUP_OBJ_SELF", "NUTS_SEEDS", "BMI", "EDUCATION",
+#                          "SMOKING", "PA", "ALCOHOL", "BMI_CAT", "REDMEATTOTAL", "REDMEAT", 
+#                          "POULTRY", "OFFALS", "i_status_out_cohort")
 
 ###################
 # generate data
