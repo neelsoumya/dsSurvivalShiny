@@ -55,7 +55,7 @@ def <- defData(def, varname = "FUP_OBJ", dist = "poisson",
 def <- defData(def, varname = "FUP_OBJ_SELF", dist = "poisson", 
     formula = "1.5 - 0.2 * age + 0.5 * female", link = "log")
 
-# PA factor
+# PA EDUCATION SMOKING factor
 # "PREV_DIAB", "AGE_BASE", "SEX", "TYPE_DIAB", "E_INTAKE", "CASE_OBJ_SELF",
 #                          "CASE_OBJ", "FUP_OBJ", "FUP_OBJ_SELF", "NUTS_SEEDS", "BMI", "EDUCATION",
 #                          "SMOKING", "PA", "ALCOHOL", "BMI_CAT", "REDMEATTOTAL", "REDMEAT", 
