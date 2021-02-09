@@ -1,4 +1,4 @@
-################################################################################
+###############################################################################
 # Script to generate synthetic data
 #
 #     https://cran.r-project.org/web/packages/simstudy/vignettes/simstudy.html
@@ -20,16 +20,23 @@ library(haven)
 ########################
 def <- defData(varname = "age", dist = "normal", 
                formula = 10, variance = 2)
+def <- defData(def, varname = "female", dist = "binary", 
+               formula = "-2 + age * 0.1", link = "logit")
+def <- defData(def, varname = "SEX", dist = "binary", 
+               formula = "-2 + age * 0.1", link = "logit")
+def <- defData(def, varname = "visits", dist = "poisson", 
+               formula = "1.5 - 0.2 * age + 0.5 * female", link = "log")
+
 def <- defData(varname = "AGE_BASE", dist = "normal", 
                formula = 10, variance = 2)
-def <- defData(def, varname = "female", dist = "binary", 
-    formula = "-2 + age * 0.1", link = "logit")
-def <- defData(def, varname = "SEX", dist = "binary", 
-    formula = "-2 + age * 0.1", link = "logit")
-def <- defData(def, varname = "visits", dist = "poisson", 
-    formula = "1.5 - 0.2 * age + 0.5 * female", link = "log")
+
 def <- defData(def, varname = "REDMEAT", dist = "normal", 
                formula = 100, variance = 10)
+def <- defData(def, varname = "FUP_OBJ", dist = "poisson", 
+               formula = "1.5 + REDMEAT", link = "log")
+def <- defData(def, varname = "FUP_OBJ_SELF", dist = "poisson", 
+               formula = "1.5 + REDMEAT", link = "log")
+
 def <- defData(def, varname = "REDMEATTOTAL", dist = "normal", 
                formula = 150, variance = 11)
 def <- defData(def, varname = "OFFALS", dist = "normal", 
@@ -47,13 +54,9 @@ def <- defData(def, varname = "ALCOHOL", dist = "normal",
 def <- defData(def, varname = "E_INTAKE", dist = "normal",
                formula = 200, variance = 20)
 def <- defData(def, varname = "CASE_OBJ", dist = "binary", 
-    formula = "0.1 + REDMEAT", link = "logit")
+               formula = "0.1 + REDMEAT", link = "logit")
 def <- defData(def, varname = "CASE_OBJ_SELF", dist = "binary", 
-    formula = "0.1 + REDMEAT", link = "logit")
-def <- defData(def, varname = "FUP_OBJ", dist = "poisson", 
-    formula = "1.5 - 0.2 * age + 0.5 * female", link = "log")
-def <- defData(def, varname = "FUP_OBJ_SELF", dist = "poisson", 
-    formula = "1.5 - 0.2 * age + 0.5 * female", link = "log")
+               formula = "0.1 + REDMEAT", link = "logit")
 
 # PA EDUCATION SMOKING factor
 # "PREV_DIAB", "AGE_BASE", "SEX", "TYPE_DIAB", "E_INTAKE", "CASE_OBJ_SELF",
@@ -79,7 +82,3 @@ haven::write_dta(data = dd,
                  path ='C:/Users/sb2333/Downloads/data_synthetic_country1.dta')
 # 2. upload to VM dev v2
 # 3. Save VM and make it available
-
-
-# TODO: use dsData
-#       https://github.com/datashield/DSData
