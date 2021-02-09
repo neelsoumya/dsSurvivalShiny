@@ -21,6 +21,10 @@ def <- defData(def, varname = "REDMEAT", dist = "normal",
                formula = 100, variance = 10)
 def <- defData(def, varname = "REDMEATTOTAL", dist = "normal", 
                formula = 150, variance = 11)
+def <- defData(def, varname = "OFFALS", dist = "normal", 
+               formula = 50, variance = 5)
+def <- defData(def, varname = "POULTRY", dist = "normal", 
+               formula = 100, variance = 8)
 def <- defData(def, varname = "NUTS_SEEDS", dist = "normal", 
                formula = 100, variance = 10)
 
