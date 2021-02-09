@@ -50,6 +50,10 @@ def <- defData(def, varname = "CASE_OBJ", dist = "binary",
     formula = "0.1 + REDMEAT", link = "logit")
 def <- defData(def, varname = "CASE_OBJ_SELF", dist = "binary", 
     formula = "0.1 + REDMEAT", link = "logit")
+def <- defData(def, varname = "FUP_OBJ", dist = "poisson", 
+    formula = "1.5 - 0.2 * age + 0.5 * female", link = "log")
+def <- defData(def, varname = "FUP_OBJ_SELF", dist = "poisson", 
+    formula = "1.5 - 0.2 * age + 0.5 * female", link = "log")
 
 # PA factor
 # "PREV_DIAB", "AGE_BASE", "SEX", "TYPE_DIAB", "E_INTAKE", "CASE_OBJ_SELF",
