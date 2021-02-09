@@ -20,6 +20,8 @@ library(haven)
 ########################
 def <- defData(varname = "age", dist = "normal", 
                formula = 10, variance = 2)
+def <- defData(varname = "AGE_BASE", dist = "normal", 
+               formula = 10, variance = 2)
 def <- defData(def, varname = "female", dist = "binary", 
     formula = "-2 + age * 0.1", link = "logit")
 def <- defData(def, varname = "visits", dist = "poisson", 
@@ -34,7 +36,8 @@ def <- defData(def, varname = "POULTRY", dist = "normal",
                formula = 100, variance = 8)
 def <- defData(def, varname = "NUTS_SEEDS", dist = "normal", 
                formula = 100, variance = 10)
-
+def <- defData(def, varname = "BMI", dist = "normal", 
+               formula = 23, variance = 1)
 
 ###################
 # generate data
