@@ -37,6 +37,7 @@ dd
 filename_synthetic_data = "df_synthetic_data.csv"
 write.table(dd, file=filename_synthetic_data,
             row.names = FALSE, quote=FALSE, append = FALSE, sep = ",")  #, col.names = NA)
+# 2. convert to dta format
 # 2. upload to VM dev v2
 # 3. Save VM and make it available
 
