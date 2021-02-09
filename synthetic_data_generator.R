@@ -44,6 +44,9 @@ def <- defData(def, varname = "BMI_CAT", dist = "normal",
                formula = 23, variance = 1)
 def <- defData(def, varname = "ALCOHOL", dist = "normal",
                formula = 42, variance = 5)
+def <- defData(def, varname = "E_INTAKE", dist = "normal",
+               formula = 200, variance = 20)
+
 
 # PA factor
 # "PREV_DIAB", "AGE_BASE", "SEX", "TYPE_DIAB", "E_INTAKE", "CASE_OBJ_SELF",
@@ -56,6 +59,8 @@ def <- defData(def, varname = "ALCOHOL", dist = "normal",
 ###################
 dd <- genData(1000, def)
 dd
+dd$TYPE_DIAB <- 2
+dd$i_status_out_cohort <- 1
 
 # 1. save as csv
 filename_synthetic_data = "df_synthetic_data.csv"
