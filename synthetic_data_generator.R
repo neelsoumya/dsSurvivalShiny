@@ -58,7 +58,8 @@ def <- defData(def, varname = "CASE_OBJ", dist = "binary",
 def <- defData(def, varname = "CASE_OBJ_SELF", dist = "binary", 
                formula = "0.1 + REDMEAT", link = "logit")
 
-# PA EDUCATION SMOKING factor
+# TODO: PA EDUCATION SMOKING factor  
+# TODO: FUP_OBJ time normal and depend on something simple
 # "PREV_DIAB", "AGE_BASE", "SEX", "TYPE_DIAB", "E_INTAKE", "CASE_OBJ_SELF",
 #                          "CASE_OBJ", "FUP_OBJ", "FUP_OBJ_SELF", "NUTS_SEEDS", "BMI", "EDUCATION",
 #                          "SMOKING", "PA", "ALCOHOL", "BMI_CAT", "REDMEATTOTAL", "REDMEAT", 
