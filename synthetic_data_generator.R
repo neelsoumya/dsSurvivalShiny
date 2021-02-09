@@ -21,6 +21,8 @@ def <- defData(def, varname = "REDMEAT", dist = "normal",
                formula = 100, variance = 10)
 def <- defData(def, varname = "REDMEATTOTAL", dist = "normal", 
                formula = 150, variance = 11)
+def <- defData(def, varname = "NUTS_SEEDS", dist = "normal", 
+               formula = 100, variance = 10)
 
 
 # generate data
