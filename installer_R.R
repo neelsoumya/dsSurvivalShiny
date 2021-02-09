@@ -43,3 +43,4 @@ library(dsHelper)
 
 devtools::install_github('https://github.com/neelsoumya/dsSurvivalShiny')#, force = TRUE)
 library(dsSurvivalShiny)
+install.packages('simstudy')
