@@ -46,7 +46,10 @@ def <- defData(def, varname = "ALCOHOL", dist = "normal",
                formula = 42, variance = 5)
 def <- defData(def, varname = "E_INTAKE", dist = "normal",
                formula = 200, variance = 20)
-
+def <- defData(def, varname = "CASE_OBJ", dist = "binary", 
+    formula = "age * 0.1 + REDMEAT", link = "logit")
+def <- defData(def, varname = "CASE_OBJ_SELF", dist = "binary", 
+    formula = "age * 0.1 + REDMEAT", link = "logit")
 
 # PA factor
 # "PREV_DIAB", "AGE_BASE", "SEX", "TYPE_DIAB", "E_INTAKE", "CASE_OBJ_SELF",
