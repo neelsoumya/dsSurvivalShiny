@@ -38,6 +38,8 @@ def <- defData(def, varname = "NUTS_SEEDS", dist = "normal",
                formula = 100, variance = 10)
 def <- defData(def, varname = "BMI", dist = "normal", 
                formula = 23, variance = 1)
+def <- defData(def, varname = "BMI_CAT", dist = "normal",
+               formula = 23, variance = 1)
 
 ###################
 # generate data
