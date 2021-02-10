@@ -29,7 +29,6 @@ devtools::install_github('https://github.com/datashield/dsModellingClient')#, fo
 #library(dsModellingClient)
 #devtools::install_github('https://github.com/datashield/DSOpal')#, force = TRUE)
 
-
 install.packages('shiny')
 install.packages('rmarkdown')
 install.packages('knitr')
@@ -37,9 +36,9 @@ install.packages('tinytex')
 install.packages('metafor')
 install.packages('shiny')
 install.packages('shinyjs')
+
 devtools::install_github(repo = 'https://github.com/lifecycle-project/ds-helper/', ref = 'completecases' )
 library(dsHelper)
-
 
 devtools::install_github('https://github.com/neelsoumya/dsSurvivalShiny')#, force = TRUE)
 library(dsSurvivalShiny)
