@@ -59,7 +59,7 @@ def <- defData(def, varname = "CASE_OBJ_SELF", dist = "binary",
                formula = "0.1 + REDMEAT", link = "logit")
 
 # TODO: PA EDUCATION SMOKING factor  
-# TODO: FUP_OBJ time normal and depend on something simple
+# TODO: FUP_OBJ time normal and depend on something simple OR just use rpois()
 
 # "PREV_DIAB", "AGE_BASE", "SEX", "TYPE_DIAB", "E_INTAKE", "CASE_OBJ_SELF",
 #                          "CASE_OBJ", "FUP_OBJ", "FUP_OBJ_SELF", "NUTS_SEEDS", "BMI", "EDUCATION",
