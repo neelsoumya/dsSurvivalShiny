@@ -242,7 +242,7 @@ shinyServer(function(input, output) {
     metafor::forest.rma(x = meta_model,
                         digits = 6, # 6 decimal places round
                         at = c(0.996, 1, 1.004, 1.008),   # ticks for hazard ratio at these places
-                        slab = c('France', 'Italy', 'Spain', 'UK', 'Netherlands', 'Germany', 'Sweden', 'Denmark', 'WHI', 'CARDIA', 'Golestan', 'MESA'))  # Denmark, WHI
+                        slab = c('France', 'Italy', 'Spain', 'UK', 'Netherlands', 'Germany', 'Sweden', 'Denmark', 'WHI', 'CARDIA', 'Golestan', 'MESA', 'PRHHP'))  # Denmark, WHI
     
     ############################################# 
     # TODO: save plot
