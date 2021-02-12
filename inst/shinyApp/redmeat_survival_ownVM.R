@@ -110,10 +110,16 @@ builder$append(server = "study14",
                table = "MEAT.prhhp_pattern_harm", driver = "OpalDriver")
 
 # MEC data
-# builder$append(server = "study15",
-#                url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
-#                user = "soumya", password = "interconnect2021",
-#                table = "MEAT.mec_pattern_harm", driver = "OpalDriver")
+builder$append(server = "study15",
+               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
+               user = "soumya", password = "interconnect2021",
+               table = "MEAT.mec_pattern_harm", driver = "OpalDriver")
+
+# ARIC data
+builder$append(server = "study16",
+               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
+               user = "soumya", password = "interconnect2021",
+               table = "MEAT.aric_pattern_harm", driver = "OpalDriver")
 
 logindata <- builder$build()
 
