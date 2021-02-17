@@ -20,6 +20,12 @@ Graphical user interface (GUI) for privacy preserving survival model meta-analys
     * script to generate synthetic data
     
     * R --no-save < synthetic_data_generator.R
+
+* build_man_test.R
+
+    * script to build manuals and test code
+    
+    * R --no-save < build_man_test.R  
    
 * vignettes
 
