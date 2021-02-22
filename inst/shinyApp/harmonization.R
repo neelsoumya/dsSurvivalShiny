@@ -6,8 +6,9 @@
 ##################
 # Load library
 ##################
-library(dsBase)
-library(dsBaseClient)
+require('DSI')
+require('DSOpal')
+require('dsBaseClient')
 
 
 #####################################
