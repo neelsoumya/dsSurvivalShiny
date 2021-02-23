@@ -14,7 +14,7 @@
 #####################################
 # Harmonize PA (physical activity)
 #####################################
-ds.quantileMean(x = 'D$PA', datasources = connections[9]) # WHI
+ds.quantileMean(x = 'D_curated$PA', datasources = connections[9]) # WHI
 
 # ds.asFactor(
 
