@@ -6,14 +6,16 @@
 ##################
 # Load library
 ##################
-require('DSI')
-require('DSOpal')
-require('dsBaseClient')
+# require('DSI')
+# require('DSOpal')
+# require('dsBaseClient')
 
 
 #####################################
 # Harmonize PA (physical activity)
 #####################################
+ds.quantileMean(x = 'D$PA', datasources = connections[9]) # WHI
 
+# ds.asFactor(
 
 ds.ls()
