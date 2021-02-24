@@ -26,7 +26,7 @@ ds.assign(toAssign = 'PA_harmonized', newobj = 'D_curated$PA', datasources = con
 
 # check if it is a factor
 ds.class(x = 'D_curated$PA', datasources = connections[9])
-
+ds.class(x = 'PA_harmonized', datasources = connections[9])
 ds.summary(x = 'D_curated$PA', datasources = connections[9])
 
 ds.ls()
