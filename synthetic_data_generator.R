@@ -82,5 +82,6 @@ write.table(dd, file=filename_synthetic_data,
 # 2. convert to dta format
 haven::write_dta(data = dd,
                  path ='C:/Users/sb2333/Downloads/data_synthetic_country1.dta')
-# 2. upload to VM dev v2
-# 3. Save VM and make it available
+
+# 3. upload to VM dev v2
+# 4. Save VM and make it available
