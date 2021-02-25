@@ -1,8 +1,8 @@
+####################################################################
 # script to initialize all connections and login to DataSHIELD
+#
+####################################################################
 
-
-
-# load and start all connections
 
 ####################
 # Load library
@@ -65,6 +65,8 @@ logindata <- builder$build()
 ##############
 # login
 ##############
+
+# load and start all connections
 
 # opals <- datashield.login(logins=logindata,assign=TRUE)
 # Log onto the remote Opal training servers
