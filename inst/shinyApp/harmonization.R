@@ -24,9 +24,19 @@ ds.asFactor(input.var.name = 'D_curated$PA', newobj.name = 'PA_harmonized', forc
 # assign this temp variable (which is now a factor) to original data frame for WHI study
 ds.assign(toAssign = 'PA_harmonized', newobj = 'D_curated$PA', datasources = connections[9])
 
+ds.dataFrame(x = 'PA_harmonized', newobj = 'D_PA2', datasources = connections[9])
+
+ds.dataFrame(x = 'PA_harmonized', newobj = 'D_curated$PA2', datasources = connections[9])
+
 # check if it is a factor
 ds.class(x = 'D_curated$PA', datasources = connections[9])
 ds.class(x = 'PA_harmonized', datasources = connections[9])
 ds.summary(x = 'D_curated$PA', datasources = connections[9])
+
+ds.class(x = 'D_PA2', datasources = connections[9])
+ds.summary(x = 'D_PA2', datasources = connections[9])
+
+# ds.class(x = 'D_curated$PA2', datasources = connections[9])
+# ds.summary(x = 'D_curated$PA2', datasources = connections[9])
 
 ds.ls()
