@@ -76,7 +76,7 @@ Graphical user interface (GUI) for privacy preserving survival model meta-analys
 
 	* install ShinySurvivalDataSHIELD package, load package and run
 	
-	 ```
+	 ```R
 	
 		install.packages('devtools')
 		
@@ -94,6 +94,7 @@ Graphical user interface (GUI) for privacy preserving survival model meta-analys
 		
 		R --no-save < RUN.R
 	
+	 ```
 
 * Screenshot of graphical user interface
 
