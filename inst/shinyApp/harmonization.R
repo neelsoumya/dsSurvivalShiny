@@ -51,5 +51,6 @@ ds.summary(x = 'D_curated$PA_harmonized', datasources = connections[9])
 # ds.summary(x = 'D_curated$PA2', datasources = connections[9])
 
 # TODO: use ds.assign for studies 1 to 9 for PA_harmonized
+# TODO: in server.R change PA to PA_harmonized
 
 ds.ls()
