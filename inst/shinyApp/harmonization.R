@@ -55,6 +55,7 @@ ds.summary(x = 'PA_harmonized', datasources = connections[9])
 ds.assign(toAssign = 'D_curated$PA',
           newobj = 'PA_harmonized',
           datasources = connections[1:8])
+# TODO: do for other studies MEC etc.
 # TODO: in server.R change PA to PA_harmonized
 
 ds.ls()
