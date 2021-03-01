@@ -28,8 +28,10 @@ ds.dataFrame(x = 'PA_harmonized', newobj = 'D_PA2', datasources = connections[9]
 
 ds.dataFrame(x = 'PA_harmonized', newobj = 'D_curated$PA2', datasources = connections[9])
 
-ds.dataFrame(x = 'c(D_curated, PA_harmonized', newobj = 'D_curated', datasources = connections[9])
+ds.dataFrame(x = c("D_curated", "PA_harmonized"), newobj = 'D_curated', datasources = connections[9])
 
+# use cbind
+# https://rdrr.io/github/datashield/dsBaseClient/man/ds.cbind.html
 
 # check if it is a factor
 ds.class(x = 'D_curated$PA', datasources = connections[9])
