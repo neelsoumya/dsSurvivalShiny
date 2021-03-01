@@ -46,6 +46,7 @@ ds.dataFrame(x = c("D_curated", "PA_harmonized"),
 # ds.class(x = 'D_PA2', datasources = connections[9])
 # ds.summary(x = 'D_PA2', datasources = connections[9])
 ds.summary(x = 'D_curated$PA_harmonized', datasources = connections[9])
+ds.summary(x = 'PA_harmonized', datasources = connections[9])
 
 # ds.class(x = 'D_curated$PA2', datasources = connections[9])
 # ds.summary(x = 'D_curated$PA2', datasources = connections[9])
