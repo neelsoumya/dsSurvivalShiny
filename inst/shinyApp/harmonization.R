@@ -16,7 +16,7 @@
 #####################################
 
 # count from studies 9 through 15
-for (i_counter_study_temp in c(9:15))
+for (i_counter_study_temp in c(9:10,12:15))
 {
             
             cat("Harmonizing data for study: ")
@@ -68,6 +68,9 @@ ds.summary(x = 'PA_harmonized', datasources = connections[9])
 ds.assign(toAssign = 'D_curated$PA',
           newobj = 'PA_harmonized',
           datasources = connections[1:8])
+ds.assign(toAssign = 'D_curated$PA',
+          newobj = 'PA_harmonized',
+          datasources = connections[11])
 # TODO: do for other studies MEC etc.
 # TODO: in server.R change PA to PA_harmonized
 
