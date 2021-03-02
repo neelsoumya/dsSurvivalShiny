@@ -57,7 +57,7 @@ ds.quantileMean(x = 'D_curated$PA', datasources = connections[14]) # WHI
 # assign these quantiles to a temp variable and make it a factor
 ds.asFactor(input.var.name = 'D_curated$PA', 
             newobj.name = 'PA_harmonized', 
-            forced.factor.levels = c(0, 3.5, 10, 41.5), 
+            forced.factor.levels = c(1.18, 1.43, 1.78, 2.07), 
             datasources = connections[14])
 
 ds.dataFrame(x = c("D_curated", "PA_harmonized"), 
@@ -71,7 +71,7 @@ ds.quantileMean(x = 'D_curated$PA', datasources = connections[15]) # WHI
 # assign these quantiles to a temp variable and make it a factor
 ds.asFactor(input.var.name = 'D_curated$PA', 
             newobj.name = 'PA_harmonized', 
-            forced.factor.levels = c(0, 3.5, 10, 41.5), 
+            forced.factor.levels = c(1.0, 2.0, 3.0, 4.0), 
             datasources = connections[15])
 
 ds.dataFrame(x = c("D_curated", "PA_harmonized"), 
