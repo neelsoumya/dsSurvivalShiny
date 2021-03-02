@@ -20,13 +20,13 @@ for (i_counter_study_temp in c(9:15))
 {
             
             # get quantiles for PA for WHI
-            ds.quantileMean(x = 'D_curated$PA', datasources = connections[9]) # WHI
+            ds.quantileMean(x = 'D_curated$PA', datasources = connections[i_counter_study_temp]) # WHI
 
             # assign these quantiles to a temp variable and make it a factor
             ds.asFactor(input.var.name = 'D_curated$PA', 
                         newobj.name = 'PA_harmonized', 
                         forced.factor.levels = c(0, 3.5, 10, 41.5), 
-                        datasources = connections[9])
+                        datasources = connections[i_counter_study_temp])
 
             # assign this temp variable (which is now a factor) to original data frame for WHI study
             # ds.assign(toAssign = 'PA_harmonized', newobj = 'D_curated$PA', datasources = connections[9])
@@ -37,7 +37,7 @@ for (i_counter_study_temp in c(9:15))
 
             ds.dataFrame(x = c("D_curated", "PA_harmonized"), 
                          newobj = 'D_curated', 
-                         datasources = connections[9])
+                         datasources = connections[i_counter_study_temp])
 
 
             # use cbind
@@ -59,7 +59,8 @@ ds.summary(x = 'PA_harmonized', datasources = connections[9])
 # ds.class(x = 'D_curated$PA2', datasources = connections[9])
 # ds.summary(x = 'D_curated$PA2', datasources = connections[9])
 
-# TODO: use ds.assign for studies 1 to 9 for PA_harmonized
+# use ds.assign for studies 1 to 9 for PA_harmonized
+#    these studies are already harmonized
 ds.assign(toAssign = 'D_curated$PA',
           newobj = 'PA_harmonized',
           datasources = connections[1:8])
