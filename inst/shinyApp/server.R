@@ -150,7 +150,7 @@ shinyServer(function(input, output) {
     if (input$checkbox_physical_activity == TRUE)
     {
         str_temp_formula_dynamic = paste0(str_temp_formula_dynamic, ' + ')
-        str_temp_formula_dynamic = paste0(str_temp_formula_dynamic, ' PA ')
+        str_temp_formula_dynamic = paste0(str_temp_formula_dynamic, ' PA_harmonized ')   # changed from PA to PA_harmonized
     }
      
     if (input$checkbox_smoking == TRUE)
