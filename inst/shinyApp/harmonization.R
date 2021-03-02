@@ -19,6 +19,10 @@
 for (i_counter_study_temp in c(9:15))
 {
             
+            cat("Harmonizing data for study: ")
+            cat(i_counter_study_temp)
+            cat("\n")
+            
             # get quantiles for PA for WHI
             ds.quantileMean(x = 'D_curated$PA', datasources = connections[i_counter_study_temp]) # WHI
 
