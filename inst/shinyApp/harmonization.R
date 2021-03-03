@@ -16,7 +16,7 @@
 #####################################
 
 # count from studies 9 through 15
-for (i_counter_study_temp in c(9:10,12:13))
+for (i_counter_study_temp in c(9,12:13))
 {
             
             cat("Harmonizing data for study: ")
