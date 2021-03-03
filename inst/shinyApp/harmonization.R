@@ -16,7 +16,7 @@
 #####################################
 
 # count from studies 9 through 15
-for (i_counter_study_temp in c(9,13))
+for (i_counter_study_temp in c(9))
 {
             
             cat("Harmonizing data for study: ")
@@ -77,6 +77,21 @@ ds.asFactor(input.var.name = 'D_curated$PA',
 ds.dataFrame(x = c("D_curated", "PA_harmonized"), 
              newobj = 'D_curated', 
              datasources = connections[12])
+
+
+
+# get quantiles for PA for WHI
+ds.quantileMean(x = 'D_curated$PA', datasources = connections[13]) # WHI
+
+# assign these quantiles to a temp variable and make it a factor
+ds.asFactor(input.var.name = 'D_curated$PA', 
+            newobj.name = 'PA_harmonized', 
+            forced.factor.levels = c(0.0, 2.0, 4.0, 5.0), 
+            datasources = connections[13])
+
+ds.dataFrame(x = c("D_curated", "PA_harmonized"), 
+             newobj = 'D_curated', 
+             datasources = connections[13])
 
 
 
