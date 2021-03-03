@@ -50,6 +50,19 @@ for (i_counter_study_temp in c(9:10,12:13))
 }
 
 
+# get quantiles for PA for WHI
+ds.quantileMean(x = 'D_curated$PA', datasources = connections[10]) # WHI
+
+# assign these quantiles to a temp variable and make it a factor
+ds.asFactor(input.var.name = 'D_curated$PA', 
+            newobj.name = 'PA_harmonized', 
+            forced.factor.levels = c(2.0, 4.5, 9.0, 36.0), 
+            datasources = connections[10])
+
+ds.dataFrame(x = c("D_curated", "PA_harmonized"), 
+             newobj = 'D_curated', 
+             datasources = connections[10])
+
 
 # get quantiles for PA for WHI
 ds.quantileMean(x = 'D_curated$PA', datasources = connections[14]) # WHI
