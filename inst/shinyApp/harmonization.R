@@ -65,8 +65,8 @@ ds.dataFrame(x = c("D_curated", "PA_harmonized"),
 
 
 
-# get quantiles for PA for WHI
-ds.quantileMean(x = 'D_curated$PA', datasources = connections[10]) # WHI
+# get quantiles for PA for CARDIA
+ds.quantileMean(x = 'D_curated$PA', datasources = connections[10]) 
 
 # assign these quantiles to a temp variable and make it a factor
 ds.asFactor(input.var.name = 'D_curated$PA', 
@@ -80,8 +80,8 @@ ds.dataFrame(x = c("D_curated", "PA_harmonized"),
 
 
 
-# get quantiles for PA for WHI
-ds.quantileMean(x = 'D_curated$PA', datasources = connections[12]) # WHI
+# get quantiles for PA for MESA
+ds.quantileMean(x = 'D_curated$PA', datasources = connections[12]) 
 
 # assign these quantiles to a temp variable and make it a factor
 ds.asFactor(input.var.name = 'D_curated$PA', 
@@ -95,8 +95,8 @@ ds.dataFrame(x = c("D_curated", "PA_harmonized"),
 
 
 
-# get quantiles for PA for WHI
-ds.quantileMean(x = 'D_curated$PA', datasources = connections[13]) # WHI
+# get quantiles for PA for PRHHP
+ds.quantileMean(x = 'D_curated$PA', datasources = connections[13]) 
 
 # assign these quantiles to a temp variable and make it a factor
 ds.asFactor(input.var.name = 'D_curated$PA', 
@@ -110,8 +110,8 @@ ds.dataFrame(x = c("D_curated", "PA_harmonized"),
 
 
 
-# get quantiles for PA for WHI
-ds.quantileMean(x = 'D_curated$PA', datasources = connections[14]) # WHI
+# get quantiles for PA for MEC
+ds.quantileMean(x = 'D_curated$PA', datasources = connections[14])
 
 # assign these quantiles to a temp variable and make it a factor
 ds.asFactor(input.var.name = 'D_curated$PA', 
@@ -124,8 +124,8 @@ ds.dataFrame(x = c("D_curated", "PA_harmonized"),
              datasources = connections[14])
 
 
-# get quantiles for PA for WHI
-ds.quantileMean(x = 'D_curated$PA', datasources = connections[15]) # WHI
+# get quantiles for PA for ARIC
+ds.quantileMean(x = 'D_curated$PA', datasources = connections[15])
 
 # assign these quantiles to a temp variable and make it a factor
 ds.asFactor(input.var.name = 'D_curated$PA', 
