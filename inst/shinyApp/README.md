@@ -12,6 +12,10 @@ R and rmarkdown files for GUI
 * log_model_summary.rmd and log_data_summary.rmd
 
    * R markdown to generate reports
+
+* model_cards.rmd
+
+   * R markdown for model cards
    
 * redmeat_survival_ownVM.R
 
