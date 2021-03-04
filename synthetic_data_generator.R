@@ -85,3 +85,7 @@ haven::write_dta(data = dd,
 
 # 3. upload to VM dev v2
 # 4. Save VM and make it available
+#    OR
+#    use datashield.table.assign datashield.assign.table
+
+
