@@ -97,6 +97,7 @@ ds.dataFrame(x = c("D_curated", "PA_harmonized"),
 
 
 # get quantiles for PA for PRHHP
+#   PRHHP has a lot more levels for PA. I have not accounted for this in the code below
 ds.quantileMean(x = 'D_curated$PA', datasources = connections[13]) 
 
 # assign these quantiles to a temp variable and make it a factor
