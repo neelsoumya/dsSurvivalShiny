@@ -113,12 +113,13 @@ ds.dataFrame(x = c("D_curated", "PA_harmonized"),
 
 
 # get quantiles for PA for MEC
+#     different quantiles used for MEC otherwuise no data coming in for some levels                  
 ds.quantileMean(x = 'D_curated$PA', datasources = connections[14])
 
 # assign these quantiles to a temp variable and make it a factor
 ds.asFactor(input.var.name = 'D_curated$PA', 
             newobj.name = 'PA_harmonized', 
-            forced.factor.levels = c(1.268810, 1.433869, 1.617976, 2.069762), # c(1.18, 1.43, 1.78, 1.94)
+            forced.factor.levels = c(1.18, 1.43, 1.78, 1.94), # c(1.268810, 1.433869, 1.617976, 2.069762), 
             datasources = connections[14])
 
 ds.dataFrame(x = c("D_curated", "PA_harmonized"), 
