@@ -79,6 +79,7 @@ ds.dataFrame(x = c("D_curated", "PA_harmonized"),
              datasources = connections[10])
 
 
+# Golestan: Golestan is already harmonized for PA and has 4 levels 
 
 # get quantiles for PA for MESA
 ds.quantileMean(x = 'D_curated$PA', datasources = connections[12]) 
