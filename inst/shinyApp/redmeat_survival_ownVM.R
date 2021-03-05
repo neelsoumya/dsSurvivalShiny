@@ -80,16 +80,16 @@ builder$append(server = "study9",
 # TODO: metafor::forest.rma() modify to have country names
 
 # WHI data (under-sampled)
-# builder$append(server = "study10",
-#                url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
-#                user = "soumya", password = "interconnect2021",
-#                table = "MEAT.whi_pattern_harm", driver = "OpalDriver")
+builder$append(server = "study10",
+               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
+               user = "soumya", password = "interconnect2021",
+               table = "MEAT.whi_pattern_harm", driver = "OpalDriver")
 
 # WHI FULL
-builder$append(server = "study10",
-               url = "https://opal.mrc-epid.cam.ac.uk/repo", # "http://opal-dev.mrc-epid.cam.ac.uk:8080"
-               user = "soumya", password = "interconnect2020", # interconnect2021
-               table = "MEAT.whi_pattern_harm", driver = "OpalDriver") # MEAT.mec_pattern_harm
+# builder$append(server = "study10",
+#                url = "https://opal.mrc-epid.cam.ac.uk/repo", # "http://opal-dev.mrc-epid.cam.ac.uk:8080"
+#                user = "soumya", password = "interconnect2020", # interconnect2021
+#               table = "MEAT.whi_pattern_harm", driver = "OpalDriver") # MEAT.mec_pattern_harm
 
 # CARDIA data
 builder$append(server = "study11",
