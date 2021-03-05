@@ -110,14 +110,40 @@ require('DSOpal')
                                                     combine_with_metafor = FALSE)
      
     
-    # list of hazard ratios for FIRST parameter over all 7 studies 
-    input_logHR = c(
-                    coxph_model_full$study10$coefficients[1,2]
+   # list of hazard ratios for FIRST parameter over all 7 studies 
+    input_logHR = c(coxph_model_full$study1$coefficients[1,2], 
+                    coxph_model_full$study2$coefficients[1,2], 
+                    coxph_model_full$study3$coefficients[1,2],
+                    coxph_model_full$study4$coefficients[1,2],
+                    coxph_model_full$study5$coefficients[1,2],
+                    coxph_model_full$study7$coefficients[1,2],
+                    coxph_model_full$study8$coefficients[1,2],
+                    coxph_model_full$study9$coefficients[1,2],
+                    coxph_model_full$study10$coefficients[1,2],
+                    coxph_model_full$study11$coefficients[1,2],
+                    coxph_model_full$study12$coefficients[1,2],
+                    coxph_model_full$study13$coefficients[1,2],
+                    coxph_model_full$study14$coefficients[1,2],
+                    coxph_model_full$study15$coefficients[1,2],
+                    coxph_model_full$study16$coefficients[1,2]
     )
     
     # list of standard errors for third parameter over all 7 studies 
-    input_se    = c(
-                    coxph_model_full$study10$coefficients[1,3]
+    input_se    = c(coxph_model_full$study1$coefficients[1,3], 
+                    coxph_model_full$study2$coefficients[1,3], 
+                    coxph_model_full$study3$coefficients[1,3],
+                    coxph_model_full$study4$coefficients[1,3],
+                    coxph_model_full$study5$coefficients[1,3],
+                    coxph_model_full$study7$coefficients[1,3],
+                    coxph_model_full$study8$coefficients[1,3],
+                    coxph_model_full$study9$coefficients[1,3],
+                    coxph_model_full$study10$coefficients[1,3],
+                    coxph_model_full$study11$coefficients[1,3],
+                    coxph_model_full$study12$coefficients[1,3],
+                    coxph_model_full$study13$coefficients[1,3],
+                    coxph_model_full$study14$coefficients[1,3],
+                    coxph_model_full$study15$coefficients[1,3],
+                    coxph_model_full$study16$coefficients[1,3]
     )
     
     
