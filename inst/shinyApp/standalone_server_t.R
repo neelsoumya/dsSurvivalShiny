@@ -37,10 +37,10 @@ require('DSOpal')
     input$exposure = 'redmeat'
     input$checkbox_age = TRUE
     input$checkbox_gender = TRUE
-    input$checkbox_bmi = TRUE
+    input$checkbox_bmi = FALSE
     input$checkbox_physical_activity = FALSE
-    input$checkbox_smoking = TRUE
-    input$checkbox_energy_intake = TRUE
+    input$checkbox_smoking = FALSE
+    input$checkbox_energy_intake = FALSE
     
     
     if (input$exposure == 'redmeat')
@@ -163,7 +163,7 @@ require('DSOpal')
     #       https://www.metafor-project.org/doku.php/plots:forest_plot 
     #   https://www.rdocumentation.org/packages/metafor/versions/2.4-0/topics/forest.rma 
     metafor::forest.rma(x = meta_model,
-                        digits = 6, # 6 decimal places round
+                        digits = 4, # 6 decimal places round
                         at = c(0.992, 0.996, 1, 1.004, 1.008),   # ticks for hazard ratio at these places
                         # at = c(0.996, 1, 1.004, 1.008),   # ticks for hazard ratio at these places
                         slab = c('France', 'Italy', 'Spain', 'UK', 'Netherlands', 'Germany', 'Sweden', 'Denmark', 'WHI', 'CARDIA', 'Golestan', 'MESA', 'PRHHP', 'MEC', 'ARIC')) #, 'ARIC'))  # , 'PRHHP' Denmark, WHI
@@ -254,5 +254,6 @@ require('DSOpal')
 #######################################################
 # save model output and logging information to disk
 #######################################################
-save.image(file = 'survival_meat_interact_mec_downstream.RData')
+save.image(file = 'survival_meat_interact_mec_downstream_final.RData')
     
+DSI::datashield.logout(conns = connections)
