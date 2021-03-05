@@ -7,6 +7,7 @@
 # 
 #####################################################################
 
+load.image(file = 'survival_meat_interact_mec.RData')
 
 #########################
 # Load libraries
