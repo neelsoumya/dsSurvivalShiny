@@ -308,7 +308,7 @@ dsBaseClient::ds.asFactor(input.var.name = 'D_curated$EDUCATION',
 ############################
 # perform harmonization
 ############################
-source('harmonization.R')
+# source('harmonization.R')
 
 ##############################################################
 # create a dummy variable for Prentice weighted survival time
