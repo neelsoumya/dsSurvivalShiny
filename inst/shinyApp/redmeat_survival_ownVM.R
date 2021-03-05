@@ -79,11 +79,17 @@ builder$append(server = "study9",
 # TODO: modofy next call to be study10
 # TODO: metafor::forest.rma() modify to have country names
 
-# WHI data
+# WHI data (under-sampled)
+# builder$append(server = "study10",
+#                url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
+#                user = "soumya", password = "interconnect2021",
+#                table = "MEAT.whi_pattern_harm", driver = "OpalDriver")
+
+# WHI FULL
 builder$append(server = "study10",
-               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
-               user = "soumya", password = "interconnect2021",
-               table = "MEAT.whi_pattern_harm", driver = "OpalDriver")
+               url = "https://opal.mrc-epid.cam.ac.uk/repo", # "http://opal-dev.mrc-epid.cam.ac.uk:8080"
+               user = "soumya", password = "interconnect2020", # interconnect2021
+               table = "MEAT.whi_pattern_harm", driver = "OpalDriver") # MEAT.mec_pattern_harm
 
 # CARDIA data
 builder$append(server = "study11",
@@ -109,11 +115,11 @@ builder$append(server = "study14",
                user = "soumya", password = "interconnect2021",
                table = "MEAT.prhhp_pattern_harm", driver = "OpalDriver")
 
-# MEC data
-builder$append(server = "study15",
-               url = "https://opal.mrc-epid.cam.ac.uk/repo", # "http://opal-dev.mrc-epid.cam.ac.uk:8080"
-               user = "soumya", password = "interconnect2020", # interconnect2021
-               table = "MEAT.mec_meat_harm", driver = "OpalDriver") # MEAT.mec_pattern_harm
+# MEC data VERY LARGE DATA
+# builder$append(server = "study15",
+#                url = "https://opal.mrc-epid.cam.ac.uk/repo", # "http://opal-dev.mrc-epid.cam.ac.uk:8080"
+#                user = "soumya", password = "interconnect2020", # interconnect2021
+#                table = "MEAT.mec_meat_harm", driver = "OpalDriver") # MEAT.mec_pattern_harm
 
 # ARIC data
 builder$append(server = "study16",
