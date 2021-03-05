@@ -105,10 +105,10 @@ builder$append(server = "study14",
                table = "MEAT.prhhp_pattern_harm", driver = "OpalDriver")
 
 # MEC data VERY LARGE DATA
-# builder$append(server = "study15",
-#                url = "https://opal.mrc-epid.cam.ac.uk/repo", # "http://opal-dev.mrc-epid.cam.ac.uk:8080"
-#                user = "soumya", password = "interconnect2020", # interconnect2021
-#                table = "MEAT.mec_meat_harm", driver = "OpalDriver") # MEAT.mec_pattern_harm
+builder$append(server = "study15",
+               url = "https://opal.mrc-epid.cam.ac.uk/repo", # "http://opal-dev.mrc-epid.cam.ac.uk:8080"
+               user = "soumya", password = "interconnect2020", # interconnect2021
+               table = "MEAT.mec_meat_harm", driver = "OpalDriver") # MEAT.mec_pattern_harm
 
 # ARIC data
 builder$append(server = "study16",
