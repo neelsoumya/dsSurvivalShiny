@@ -7,8 +7,6 @@
 # 
 #####################################################################
 
-load.image(file = 'survival_meat_interact_mec.RData')
-
 #########################
 # Load libraries
 #########################
@@ -110,6 +108,11 @@ require('DSOpal')
     coxph_model_full <- dsBaseClient::ds.coxph.SLMA(formula = str_temp_formula_dynamic,
                                                     combine_with_metafor = FALSE)
      
+    
+    summary(coxph_model_full)
+    
+    load(file = 'survival_meat_interact_mec.RData')
+    
     
    # list of hazard ratios for FIRST parameter over all 7 studies 
     input_logHR = c(coxph_model_full$study1$coefficients[1,2], 
