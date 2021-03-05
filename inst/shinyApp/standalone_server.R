@@ -39,7 +39,7 @@ require('DSOpal')
     input$checkbox_age = TRUE
     input$checkbox_gender = TRUE
     input$checkbox_bmi = TRUE
-    input$checkbox_physical_activity = TRUE
+    input$checkbox_physical_activity = FALSE
     input$checkbox_smoking = TRUE
     input$checkbox_energy_intake = TRUE
     
@@ -88,7 +88,7 @@ require('DSOpal')
     if (input$checkbox_physical_activity == TRUE)
     {
         str_temp_formula_dynamic = paste0(str_temp_formula_dynamic, ' + ')
-        str_temp_formula_dynamic = paste0(str_temp_formula_dynamic, ' PA_harmonized ')   # changed from PA to PA_harmonized
+        str_temp_formula_dynamic = paste0(str_temp_formula_dynamic, ' PA ')   # changed from PA to PA_harmonized
     }
      
     if (input$checkbox_smoking == TRUE)
