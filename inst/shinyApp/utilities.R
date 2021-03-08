@@ -1,6 +1,7 @@
 ###############################################
 # File with utility and helper functions
 #     for the survival model GUI
+# 
 ###############################################
 
 fn_recompute <- function(input_e_min, 
