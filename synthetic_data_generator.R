@@ -79,7 +79,7 @@ filename_synthetic_data = "df_synthetic_data.csv"
 write.table(dd, file=filename_synthetic_data,
             row.names = FALSE, quote=FALSE, append = FALSE, sep = ",")  #, col.names = NA)
 
-# 2. convert to dta format
+# 2. convert to dta format for uploading to VM
 haven::write_dta(data = dd,
                  path ='C:/Users/sb2333/Downloads/data_synthetic_country1.dta')
 
@@ -87,5 +87,3 @@ haven::write_dta(data = dd,
 # 4. Save VM and make it available
 #    OR
 #    use datashield.table.assign datashield.assign.table
-
-
