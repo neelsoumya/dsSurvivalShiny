@@ -700,7 +700,7 @@ require('DSOpal')
     ######################################### 
     # now load previous data from stage1.R
     #########################################
-    load(file = 'survival_meat_interact_mec.RData')
+    load(file = 'survival_meat_interact_stage1.RData')
     
     
    # list of hazard ratios for FIRST parameter over all 7 studies 
