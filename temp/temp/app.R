@@ -1,3 +1,6 @@
+############################################################
+# Plot pretty forest plots 
+# this is donwstream of stage1.R and stage2.R
 #
 # This is a Shiny web application. You can run the application by clicking
 # the 'Run App' button above.
@@ -40,7 +43,10 @@ server <- function(input, output) {
         x    <- faithful[, 2]
         bins <- seq(min(x), max(x), length.out = input$bins + 1)
 
-        # draw the histogram with the specified number of bins
+        
+        # this is donwstream of stage1.R and stage2.R
+        # load the Rdata file that is saved in stage2.R
+        
         load(file = '../../inst/shinyApp/survival_meat_interact_mec_downstream_final.RData')
         metafor::forest.rma(x = meta_model,
                             digits = 4, # 6 decimal places round
