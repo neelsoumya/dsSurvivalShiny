@@ -582,7 +582,7 @@ dsBaseClient::ds.Surv(time='PRENTICETIME_SELF', event = 'EVENT_SELF', objectname
 #######################################################
 # save model output and logging information to disk
 #######################################################
-save.image(file = 'survival_meat_interact_mec.RData')
+save.image(file = 'survival_meat_interact_stage1.RData')
 
 #############################################
 # disconnect
@@ -819,6 +819,6 @@ require('DSOpal')
 #######################################################
 # save model output and logging information to disk
 #######################################################
-save.image(file = 'survival_meat_interact_mec.RData')
+save.image(file = 'survival_meat_interact_stage1.RData')
 
 DSI::datashield.logout(conns = connections)    
