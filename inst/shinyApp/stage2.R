@@ -746,11 +746,11 @@ require('DSOpal')
     #      use slab vector of labels
     #       https://www.metafor-project.org/doku.php/plots:forest_plot 
     #   https://www.rdocumentation.org/packages/metafor/versions/2.4-0/topics/forest.rma 
-    metafor::forest.rma(x = meta_model,
-                        digits = 4, # 6 decimal places round
-                        at = c(0.992, 0.996, 1, 1.004, 1.008),   # ticks for hazard ratio at these places
-                        # at = c(0.996, 1, 1.004, 1.008),   # ticks for hazard ratio at these places
-                        slab = c('France', 'Italy', 'Spain', 'UK', 'Netherlands', 'Germany', 'Sweden', 'Denmark', 'WHI', 'CARDIA', 'Golestan', 'MESA', 'PRHHP', 'MEC', 'ARIC')) #, 'ARIC'))  # , 'PRHHP' Denmark, WHI
+    metafor::forest.rma(x = meta_model) #,
+                        # digits = 4, # 6 decimal places round
+                        # at = c(0.992, 0.996, 1, 1.004, 1.008),   # ticks for hazard ratio at these places
+                        # # at = c(0.996, 1, 1.004, 1.008),   # ticks for hazard ratio at these places
+                        # slab = c('France', 'Italy', 'Spain', 'UK', 'Netherlands', 'Germany', 'Sweden', 'Denmark', 'WHI', 'CARDIA', 'Golestan', 'MESA', 'PRHHP', 'MEC', 'ARIC')) #, 'ARIC'))  # , 'PRHHP' Denmark, WHI
     
     ############################################# 
     # TODO: save plot
