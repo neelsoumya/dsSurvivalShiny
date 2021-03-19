@@ -693,7 +693,7 @@ require('DSOpal')
                                                     combine_with_metafor = FALSE)
      
     
-    summary(coxph_model_full)
+    # summary(coxph_model_full)
     
     coxph_model_full_bkup <- coxph_model_full
     
@@ -741,7 +741,7 @@ require('DSOpal')
     
     
     meta_model <- metafor::rma(input_logHR, sei = input_se, method = 'REML')
-    summary(meta_model)
+    # summary(meta_model)
     
     # TODO: add bigger font for HR for studies
     #       https://www.metafor-project.org/doku.php/plots 
