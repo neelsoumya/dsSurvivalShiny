@@ -636,7 +636,7 @@ require('DSOpal')
     input$checkbox_age = TRUE
     input$checkbox_gender = TRUE
     input$checkbox_bmi = FALSE
-    input$checkbox_physical_activity = FALSE
+    input$checkbox_physical_activity = TRUE 
     input$checkbox_smoking = FALSE
     input$checkbox_energy_intake = FALSE
     
