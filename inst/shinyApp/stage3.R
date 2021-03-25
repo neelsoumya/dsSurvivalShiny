@@ -81,16 +81,16 @@ builder <- DSI::newDSLoginBuilder()
 
 
 # CARDIA data
-builder$append(server = "study11",
-               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
-               user = "soumya", password = "interconnect2021",
-               table = "MEAT.cardia_pattern_harm", driver = "OpalDriver")
+#builder$append(server = "study11",
+#               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
+#               user = "soumya", password = "interconnect2021",
+#               table = "MEAT.cardia_pattern_harm", driver = "OpalDriver")
 
 # Golestan data
-builder$append(server = "study12",
-               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
-               user = "soumya", password = "interconnect2021",
-               table = "MEAT.golestan_pattern_harm", driver = "OpalDriver")
+#builder$append(server = "study12",
+#               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
+#               user = "soumya", password = "interconnect2021",
+#               table = "MEAT.golestan_pattern_harm", driver = "OpalDriver")
 
 # MESA data
 builder$append(server = "study13",
@@ -105,10 +105,10 @@ builder$append(server = "study14",
                table = "MEAT.prhhp_pattern_harm", driver = "OpalDriver")
 
 # MEC data VERY LARGE DATA
-builder$append(server = "study15",
-               url = "https://opal.mrc-epid.cam.ac.uk/repo", # "http://opal-dev.mrc-epid.cam.ac.uk:8080"
-               user = "soumya", password = "interconnect2020", # interconnect2021
-               table = "MEAT.mec_meat_harm", driver = "OpalDriver") # MEAT.mec_pattern_harm
+#builder$append(server = "study15",
+#               url = "https://opal.mrc-epid.cam.ac.uk/repo", # "http://opal-dev.mrc-epid.cam.ac.uk:8080"
+#               user = "soumya", password = "interconnect2020", # interconnect2021
+#               table = "MEAT.mec_meat_harm", driver = "OpalDriver") # MEAT.mec_pattern_harm
 
 # ARIC data
 builder$append(server = "study16",
@@ -689,13 +689,13 @@ require('DSOpal')
     cat(str_temp_formula_dynamic) 
      
     # call coxphSLMA()
-    coxph_model_full <- dsBaseClient::ds.coxph.SLMA(formula = str_temp_formula_dynamic,
+    coxph_model_full_bkup_stage3 <- dsBaseClient::ds.coxph.SLMA(formula = str_temp_formula_dynamic,
                                                     combine_with_metafor = FALSE)
      
     
     # summary(coxph_model_full)
     
-    coxph_model_full_bkup_stage3 <- coxph_model_full
+    # coxph_model_full_bkup_stage3 <- coxph_model_full
 
 
 #######################################################
