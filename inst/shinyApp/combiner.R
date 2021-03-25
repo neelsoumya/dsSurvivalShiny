@@ -4,6 +4,8 @@
 #
 ##########################################
 
+# TODO: make a shiny app server later for better plots
+
 #######################
 # load library
 #######################
