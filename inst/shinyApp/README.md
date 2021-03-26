@@ -26,6 +26,6 @@ R and rmarkdown files for GUI
    * script to perform harmonization
 
 
-* stage1.R and stage2.R
+* stage1.R and stage2.R and combiner.R
 
    * script to call servers sequentially and not in parallel
