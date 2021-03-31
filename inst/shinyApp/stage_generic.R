@@ -139,7 +139,7 @@ connections <- DSI::datashield.login(logins = logindata, assign = TRUE,
 
 # make it generic 
 # call for only first two
-connections <- connections[1:2]
+connections_trunc <- connections[1:2]
 
 #############################################
 # data filtering
@@ -154,58 +154,58 @@ dsBaseClient::ds.dataFrameSubset(df.name = 'D',
                                  V2.name = '0', 
                                  Boolean.operator = '==', 
                                  newobj = 'E_temp',
-                                 datasources = connections)	
+                                 datasources = connections_trunc)	
 
 cat("Performing data munging .... \n")
 cat("The number of patients that you start with .... \n")
 dsBaseClient::ds.length(x = 'D$SEX', 
                         type = 'split',
-                        datasources = connections)
+                        datasources = connections_trunc)
 
 dsBaseClient::ds.dataFrameSubset(df.name = 'E_temp', 
                                  V1.name = 'E_temp$AGE_BASE', 
                                  V2.name = '18', 
                                  Boolean.operator = '>=', 
                                  newobj = 'E_temp2',
-                                 datasources = connections)	
+                                 datasources = connections_trunc)	
 
 cat("The number of patients after removing those with age >= 18 ...")
 dsBaseClient::ds.length(x = 'E_temp2$SEX', 
                         type = 'split',
-                        datasources = connections)
+                        datasources = connections_trunc)
 
 dsBaseClient::ds.dataFrameSubset(df.name = 'E_temp2', 
                                  V1.name = 'E_temp2$TYPE_DIAB', 
                                  V2.name = '1', 
                                  Boolean.operator = '!=', 
                                  newobj = 'E_temp3',
-                                 datasources = connections)	
+                                 datasources = connections_trunc)	
 
 cat("The number of patients that remain after removing those with Type 1 diabetes  ..\n")
 dsBaseClient::ds.length(x = 'E_temp3$SEX', 
                         type = 'split',
-                        datasources = connections)
+                        datasources = connections_trunc)
 
 # filter and remove outliers for energy intake
-dsBaseClient::ds.asNumeric("E_temp3$SEX", newobj = "sexNumbers", connections)
+dsBaseClient::ds.asNumeric("E_temp3$SEX", newobj = "sexNumbers", connections_trunc)
 
 dsBaseClient::ds.assign(toAssign = "(sexNumbers*300)+E_temp3$E_INTAKE", 
                         newobj = "adjustedLowerBound",
-                        connections)
+                        connections_trunc)
 
 dsBaseClient::ds.assign(toAssign = "(sexNumbers*700)+E_temp3$E_INTAKE", 
                         newobj = "adjustedUpperBound",
-                        connections)
+                        connections_trunc)
 
 dsBaseClient::ds.cbind(x=c("E_temp3","adjustedLowerBound"),
                        newobj = "L1",
                        #DataSHIELD.checks = FALSE,
-                       datasources = connections)
+                       datasources = connections_trunc)
 
 dsBaseClient::ds.cbind(x=c("L1", "adjustedUpperBound"),
                        newobj = "L2",
                        #DataSHIELD.checks = FALSE,
-                       datasources = connections)
+                       datasources = connections_trunc)
 
 # remove participants with very high or very low energy intake
 dsBaseClient::ds.dataFrameSubset(df.name = 'L2', 
@@ -213,28 +213,28 @@ dsBaseClient::ds.dataFrameSubset(df.name = 'L2',
                                  V2.name = '4200', 
                                  Boolean.operator = '<=', 
                                  newobj = 'E3',
-                                 datasources = connections)	
+                                 datasources = connections_trunc)	
 
 # how many have been removed
 dsBaseClient::ds.length(x = 'L2$SEX', 
                         type = 'split',
-                        datasources = connections)
+                        datasources = connections_trunc)
 
 dsBaseClient::ds.length(x = 'E3$SEX',
                         type = 'split',
-                        datasources = connections)
+                        datasources = connections_trunc)
 
 dsBaseClient::ds.dataFrameSubset(df.name = 'E3', 
                                  V1.name = 'E3$adjustedLowerBound', 
                                  V2.name = '800', 
                                  Boolean.operator = '>=', 
                                  newobj = 'D_curated', 
-                                 datasources = connections)
+                                 datasources = connections_trunc)
 
 cat("The number of patients removed due to lower bound on energy intake are: \n")
 dsBaseClient::ds.length(x = 'D_curated$SEX',
                         type = 'split',
-                        datasources = connections)
+                        datasources = connections_trunc)
 
 # TODO: make sure no data missing for the covariates across all studies
 
@@ -299,90 +299,90 @@ none_cc_vars = c('tid.f','CENSOR', "WAIST", "FAM_DIAB")
 
 dsBaseClient::ds.asNumeric(x.name = "D_curated$CASE_OBJ",
                            newobj = "EVENT",
-                           datasources = connections)
+                           datasources = connections_trunc)
 
 # time to event variable
 dsBaseClient::ds.asNumeric(x.name = "D_curated$FUP_OBJ",
                            newobj = "SURVTIME",
-                           datasources = connections)
+                           datasources = connections_trunc)
 
 # add secondary event and survtime variables
 dsBaseClient::ds.asNumeric(x.name = "D_curated$CASE_OBJ_SELF",
                            newobj = "EVENT_SELF",
-                           datasources = connections)
+                           datasources = connections_trunc)
 
 # time to event variable
 dsBaseClient::ds.asNumeric(x.name = "D_curated$FUP_OBJ_SELF",
                            newobj = "SURVTIME_SELF",
-                           datasources = connections)
+                           datasources = connections_trunc)
 
 # get age at baseline
 dsBaseClient::ds.asNumeric(x.name = 'D_curated$AGE_BASE',
                            newobj = 'AGEBASE',
-                           datasources = connections)
+                           datasources = connections_trunc)
 
 # get exposure variables
 dsBaseClient::ds.asNumeric(x.name = 'D_curated$NUTS_SEEDS',
                            newobj = 'NUTSSEEDS',
-                           datasources = connections
+                           datasources = connections_trunc
 )
 
 # get exposure variables
 dsBaseClient::ds.asNumeric(x.name = 'D_curated$REDMEATTOTAL',
                            newobj = 'REDMEATTOTAL',
-                           datasources = connections
+                           datasources = connections_trunc
 )
 
 # get red meat only
 dsBaseClient::ds.asNumeric(x.name = 'D_curated$REDMEAT', 
                            newobj = 'REDMEAT', 
-                           datasources = connections)
+                           datasources = connections_trunc)
 
 # get poultry
 dsBaseClient::ds.asNumeric(x.name = 'D_curated$POULTRY', 
                            newobj = 'POULTRY', 
-                           datasources = connections)
+                           datasources = connections_trunc)
 # get offals
 dsBaseClient::ds.asNumeric(x.name = 'D_curated$OFFALS', 
                            newobj = 'OFFALS', 
-                           datasources = connections)
+                           datasources = connections_trunc)
 
 
 # get gender
 dsBaseClient::ds.asFactor(input.var.name = 'D_curated$SEX',
                           newobj.name = 'GENDER',
-                          datasources = connections
+                          datasources = connections_trunc
 )
 
 # get BMI
 dsBaseClient::ds.asNumeric(x.name = 'D_curated$BMI',
                            newobj = 'BMI',
-                           datasources = connections
+                           datasources = connections_trunc
 )
 
 # Get physical activity
 dsBaseClient::ds.asFactor(input.var.name = 'D_curated$PA', 
                           newobj.name = 'PA', 
-                          datasources = connections)
+                          datasources = connections_trunc)
 
 # get smoking
 dsBaseClient::ds.asFactor(input.var.name = 'D_curated$SMOKING', 
                           newobj.name = 'SMOKING', 
-                          datasources = connections)
+                          datasources = connections_trunc)
 # get alcohol
 dsBaseClient::ds.asNumeric(x.name = 'D_curated$ALCOHOL', 
                            newobj = 'ALCOHOL', 
-                           datasources = connections)
+                           datasources = connections_trunc)
 
 # get energy intake
 dsBaseClient::ds.asNumeric(x.name = 'D_curated$E_INTAKE', 
                            newobj = 'E_INTAKE', 
-                           datasources = connections)
+                           datasources = connections_trunc)
 
 # get education
 dsBaseClient::ds.asFactor(input.var.name = 'D_curated$EDUCATION', 
                           newobj.name = 'EDUCATION', 
-                          datasources = connections)
+                          datasources = connections_trunc)
 
 ############################
 # perform harmonization
@@ -394,15 +394,15 @@ dsBaseClient::ds.asFactor(input.var.name = 'D_curated$EDUCATION',
 ##############################################################
 ds.assign(toAssign = "SURVTIME",
           newobj = "PRENTICETIME",
-          datasources = connections
+          datasources = connections_trunc
 )
 
 # let us now assume that all of study 2 is case outside sub-cohort
-#	hence call ds.assign for connections[2]
+#	hence call ds.assign for connections_trunc[2]
 # TODO: fix later using ds.Boole()
 #ds.assign(toAssign = "PRENTICETIME-0.00001",
 #          newobj = "PRENTICETIME",
-#          datasources = connections[2]
+#          datasources = connections_trunc[2]
 #         )
 
 # create a variable for out of cohort indicator
@@ -410,7 +410,7 @@ ds.assign(toAssign = "SURVTIME",
 #	now this is set to 0	
 #ds.assign(toAssign = "0",
 #          newobj = "i_status_out_cohort",
-#          datasources = connections
+#          datasources = connections_trunc
 #         )
 
 # javascript logic in data dictionary like so:
@@ -425,12 +425,12 @@ ds.assign(toAssign = "SURVTIME",
 # }
 dsBaseClient::ds.asNumeric(x.name = 'D_curated$i_status_out_cohort', 
                            newobj = 'i_status_out_cohort', 
-                           datasources = connections)
+                           datasources = connections_trunc)
 
 # cbind it to main data frame D
 # ds.cbind(x=c("i_status_out_cohort","D"),
 #         newobj = "D",
-#         datasources = connections
+#         datasources = connections_trunc
 #        )             
 
 
@@ -439,13 +439,13 @@ dsBaseClient::ds.asNumeric(x.name = 'D_curated$i_status_out_cohort',
 #	else if 0 then SURVTIME
 ds.assign(toAssign = "(i_status_out_cohort*0.00001) + ((1-i_status_out_cohort)*SURVTIME)",
           newobj = "PRENTICETIME",
-          datasources = connections
+          datasources = connections_trunc
 )
 
 # repeat for secondary objective
 ds.assign(toAssign = "(i_status_out_cohort*0.00001) + ((1-i_status_out_cohort)*SURVTIME_SELF)",
           newobj = "PRENTICETIME_SELF",
-          datasources = connections
+          datasources = connections_trunc
 )
 
 
@@ -463,11 +463,11 @@ dsBaseClient::ds.ls()
 # 	https://github.com/neelsoumya/dsBase/blob/absolute_newbie/R/coxphSLMADS.R
 
 # 1. use constructed surv object in coxph
-dsBaseClient::ds.Surv(time='SURVTIME', event = 'EVENT', objectname='surv_object', datasources = connections)
+dsBaseClient::ds.Surv(time='SURVTIME', event = 'EVENT', objectname='surv_object', datasources = connections_trunc)
 
-dsBaseClient::ds.Surv(time='PRENTICETIME', event = 'EVENT', objectname='surv_object_prentice', datasources = connections) 
+dsBaseClient::ds.Surv(time='PRENTICETIME', event = 'EVENT', objectname='surv_object_prentice', datasources = connections_trunc) 
 
-dsBaseClient::ds.Surv(time='PRENTICETIME_SELF', event = 'EVENT_SELF', objectname='surv_object_prentice_self', datasources = connections) 
+dsBaseClient::ds.Surv(time='PRENTICETIME_SELF', event = 'EVENT_SELF', objectname='surv_object_prentice_self', datasources = connections_trunc) 
 
 #############################################
 # Model 1
@@ -581,7 +581,7 @@ save.image(file = 'survival_meat_interact.RData')
 #############################################
 # disconnect
 #############################################
-#DSI::datashield.logout(conns = connections)
+#DSI::datashield.logout(conns = connections_trunc)
 
 cat("Completed ........\n")
 
@@ -696,7 +696,7 @@ require('DSOpal')
      
     # call coxphSLMA()
     coxph_model_full_bkup_stage3 <- dsBaseClient::ds.coxph.SLMA(formula = str_temp_formula_dynamic,
-                                                    combine_with_metafor = FALSE, datasources = connections)
+                                                    combine_with_metafor = FALSE, datasources = connections_trunc)
      
     
     # summary(coxph_model_full)
