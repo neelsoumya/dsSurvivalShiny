@@ -1,5 +1,6 @@
 ######################################################################################
 # Meta-analysis of survival models in DataSHIELD for the red meat project
+#   generic 
 #	
 # Additional code in:
 #   https://github.com/neelsoumya/dsBaseClient/tree/absolute_newbie_client
@@ -134,6 +135,11 @@ list_all_var_load <- list("PREV_DIAB", "AGE_BASE", "SEX", "TYPE_DIAB", "E_INTAKE
 #     https://github.com/datashield/DSI/blob/master/R/datashield.login.R
 connections <- DSI::datashield.login(logins = logindata, assign = TRUE, 
                                      symbol = "D", variables = list_all_var_load) 
+
+
+# make it generic 
+# call for only first two
+connections <- connections[1:2]
 
 #############################################
 # data filtering
