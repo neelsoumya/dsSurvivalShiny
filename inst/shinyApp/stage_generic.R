@@ -463,11 +463,11 @@ dsBaseClient::ds.ls()
 # 	https://github.com/neelsoumya/dsBase/blob/absolute_newbie/R/coxphSLMADS.R
 
 # 1. use constructed surv object in coxph
-dsBaseClient::ds.Surv(time='SURVTIME', event = 'EVENT', objectname='surv_object')
+dsBaseClient::ds.Surv(time='SURVTIME', event = 'EVENT', objectname='surv_object', datasources = connections)
 
-dsBaseClient::ds.Surv(time='PRENTICETIME', event = 'EVENT', objectname='surv_object_prentice') 
+dsBaseClient::ds.Surv(time='PRENTICETIME', event = 'EVENT', objectname='surv_object_prentice', datasources = connections) 
 
-dsBaseClient::ds.Surv(time='PRENTICETIME_SELF', event = 'EVENT_SELF', objectname='surv_object_prentice_self') 
+dsBaseClient::ds.Surv(time='PRENTICETIME_SELF', event = 'EVENT_SELF', objectname='surv_object_prentice_self', datasources = connections) 
 
 #############################################
 # Model 1
@@ -696,7 +696,7 @@ require('DSOpal')
      
     # call coxphSLMA()
     coxph_model_full_bkup_stage3 <- dsBaseClient::ds.coxph.SLMA(formula = str_temp_formula_dynamic,
-                                                    combine_with_metafor = FALSE)
+                                                    combine_with_metafor = FALSE, datasources = connections)
      
     
     # summary(coxph_model_full)
