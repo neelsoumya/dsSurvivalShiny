@@ -33,45 +33,45 @@ require('dsBaseClient')
 #################################################
 builder <- DSI::newDSLoginBuilder()
 
-#builder$append(server = "study1", 
-#               url = "http://192.168.56.100:8080/", 
-#               user = "administrator", password = "datashield_test&", 
-#               table = "test.meat_country1_harmonized", driver = "OpalDriver")
+builder$append(server = "study1", 
+               url = "http://192.168.56.100:8080/", 
+               user = "administrator", password = "datashield_test&", 
+               table = "test.meat_country1_harmonized", driver = "OpalDriver")
 
-#builder$append(server = "study2", 
-#               url = "http://192.168.56.100:8080/", 
-#               user = "administrator", password = "datashield_test&", 
-#               table = "test.meat_country2_harmonized", driver = "OpalDriver")
+builder$append(server = "study2", 
+               url = "http://192.168.56.100:8080/", 
+               user = "administrator", password = "datashield_test&", 
+               table = "test.meat_country2_harmonized", driver = "OpalDriver")
 
-#builder$append(server = "study3",
-#               url = "http://192.168.56.100:8080/",
-#               user = "administrator", password = "datashield_test&",
-#               table = "test.meat_country3_harmonized", driver = "OpalDriver")
+builder$append(server = "study3",
+               url = "http://192.168.56.100:8080/",
+               user = "administrator", password = "datashield_test&",
+               table = "test.meat_country3_harmonized", driver = "OpalDriver")
 
-#builder$append(server = "study4",
-#               url = "http://192.168.56.100:8080/",
-#               user = "administrator", password = "datashield_test&",
-#               table = "test.meat_country4_harmonized", driver = "OpalDriver")
+builder$append(server = "study4",
+               url = "http://192.168.56.100:8080/",
+               user = "administrator", password = "datashield_test&",
+               table = "test.meat_country4_harmonized", driver = "OpalDriver")
 
-#builder$append(server = "study5",
-#               url = "http://192.168.56.100:8080/",
-#               user = "administrator", password = "datashield_test&",
-#               table = "test.meat_country5_harmonized", driver = "OpalDriver")
+builder$append(server = "study5",
+               url = "http://192.168.56.100:8080/",
+               user = "administrator", password = "datashield_test&",
+               table = "test.meat_country5_harmonized", driver = "OpalDriver")
 
-#builder$append(server = "study7",
-#               url = "http://192.168.56.100:8080/",
-#               user = "administrator", password = "datashield_test&",
-#               table = "test.meat_country7_harmonized", driver = "OpalDriver")
+builder$append(server = "study7",
+               url = "http://192.168.56.100:8080/",
+               user = "administrator", password = "datashield_test&",
+               table = "test.meat_country7_harmonized", driver = "OpalDriver")
 
-#builder$append(server = "study8",
-#               url = "http://192.168.56.100:8080/",
-#               user = "administrator", password = "datashield_test&",
-#               table = "test.meat_country8_harmonized", driver = "OpalDriver")
+builder$append(server = "study8",
+               url = "http://192.168.56.100:8080/",
+               user = "administrator", password = "datashield_test&",
+               table = "test.meat_country8_harmonized", driver = "OpalDriver")
 
-#builder$append(server = "study9",
-#               url = "http://192.168.56.100:8080",
-#               user = "administrator", password = "datashield_test&",
-#               table = "test.meat_country9_harmonized", driver = "OpalDriver")
+builder$append(server = "study9",
+               url = "http://192.168.56.100:8080",
+               user = "administrator", password = "datashield_test&",
+               table = "test.meat_country9_harmonized", driver = "OpalDriver")
 # CAUTION
 # DUMMY DATA
 # builder$append(server = "study9",
@@ -85,16 +85,16 @@ builder <- DSI::newDSLoginBuilder()
 
 
 # CARDIA data
-#builder$append(server = "study11",
-#               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
-#               user = "soumya", password = "interconnect2021",
-#               table = "MEAT.cardia_pattern_harm", driver = "OpalDriver")
+builder$append(server = "study11",
+               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
+               user = "soumya", password = "interconnect2021",
+               table = "MEAT.cardia_pattern_harm", driver = "OpalDriver")
 
 # Golestan data
-#builder$append(server = "study12",
-#               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
-#               user = "soumya", password = "interconnect2021",
-#               table = "MEAT.golestan_pattern_harm", driver = "OpalDriver")
+builder$append(server = "study12",
+               url = "http://opal-dev.mrc-epid.cam.ac.uk:8080",
+               user = "soumya", password = "interconnect2021",
+               table = "MEAT.golestan_pattern_harm", driver = "OpalDriver")
 
 # MESA data
 builder$append(server = "study13",
@@ -109,10 +109,10 @@ builder$append(server = "study14",
                table = "MEAT.prhhp_pattern_harm", driver = "OpalDriver")
 
 # MEC data VERY LARGE DATA
-#builder$append(server = "study15",
-#               url = "https://opal.mrc-epid.cam.ac.uk/repo", # "http://opal-dev.mrc-epid.cam.ac.uk:8080"
-#               user = "soumya", password = "interconnect2020", # interconnect2021
-#               table = "MEAT.mec_meat_harm", driver = "OpalDriver") # MEAT.mec_pattern_harm
+builder$append(server = "study15",
+               url = "https://opal.mrc-epid.cam.ac.uk/repo", # "http://opal-dev.mrc-epid.cam.ac.uk:8080"
+               user = "soumya", password = "interconnect2020", # interconnect2021
+               table = "MEAT.mec_meat_harm", driver = "OpalDriver") # MEAT.mec_pattern_harm
 
 # ARIC data
 builder$append(server = "study16",
