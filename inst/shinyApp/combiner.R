@@ -29,7 +29,7 @@ coxph_model_full_1 <- coxph_model_full
 #######################
 # call stage 2
 #######################
-stage_generic(c_study_index = c(10:12), str_filename_save = 'survival_meat_interact_mec_downstream_2.RData')
+stage_generic(c_study_index = c(10:11), str_filename_save = 'survival_meat_interact_mec_downstream_2.RData')
 
 # load Rdata file
 load(file = 'survival_meat_interact_mec_downstream_2.RData')
@@ -41,17 +41,37 @@ coxph_model_full_2 <- coxph_model_full
 #######################
 # call stage 3
 #######################
-stage_generic(c_study_index = c(10:12), str_filename_save = 'survival_meat_interact_mec_downstream_2.RData')
+stage_generic(c_study_index = c(11:12), str_filename_save = 'survival_meat_interact_mec_downstream_3.RData')
 
 # load Rdata file
-load(file = 'survival_meat_interact_mec_downstream_2.RData')
+load(file = 'survival_meat_interact_mec_downstream_3.RData')
 
 # rename coxph model 
-coxph_model_full_2 <- coxph_model_full
+coxph_model_full_3 <- coxph_model_full
 
 
+#######################
+# call stage 4 MEC
+#######################
+stage_generic(c_study_index = c(13), str_filename_save = 'survival_meat_interact_mec_downstream_4.RData')
+
+# load Rdata file
+load(file = 'survival_meat_interact_mec_downstream_4.RData')
+
+# rename coxph model 
+coxph_model_full_4 <- coxph_model_full
 
 
+#######################
+# call stage 5
+#######################
+stage_generic(c_study_index = c(14), str_filename_save = 'survival_meat_interact_mec_downstream_5.RData')
+
+# load Rdata file
+load(file = 'survival_meat_interact_mec_downstream_5.RData')
+
+# rename coxph model 
+coxph_model_full_5 <- coxph_model_full
 
 
 
@@ -59,24 +79,24 @@ coxph_model_full_2 <- coxph_model_full
 # source('stage1.R')
 
 # load Rdata file
-load(file = 'survival_meat_interact_stage1.RData')
+#load(file = 'survival_meat_interact_stage1.RData')
 
 # rename coxph model 
 
-coxph_model_full_stage1 <- coxph_model_full
+#coxph_model_full_stage1 <- coxph_model_full
 
 # call stage 2
-source('stage3.R')
+#source('stage3.R')
 
 # load Rdata file
-load(file = 'survival_meat_interact_stage3.RData')
+#load(file = 'survival_meat_interact_stage3.RData')
 
 # rename coxph model 
-coxph_model_full_stage3 <- coxph_model_full
+#coxph_model_full_stage3 <- coxph_model_full
 
 
-# then make changes in log_HR
-
+# TODO: then make changes in log_HR
+#    fill in coxph_model_full_4 etc.
     
     
    # list of hazard ratios for FIRST parameter over all 7 studies 
