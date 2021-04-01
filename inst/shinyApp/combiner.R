@@ -14,7 +14,12 @@ library(metafor)
 #######################
 # call stage 1
 #######################
-source('stage1.R')
+source('stage_generic.R')
+
+stage_generic(c_study_index = c(1:2), str_filename_save = 'survival_meat_interact_mec_downstream_stage3.RData')
+
+
+# source('stage1.R')
 
 # load Rdata file
 load(file = 'survival_meat_interact_stage1.RData')
