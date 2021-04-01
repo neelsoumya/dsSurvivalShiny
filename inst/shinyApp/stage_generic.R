@@ -7,9 +7,12 @@
 #   https://github.com/neelsoumya/dsBase/tree/absolute_newbie
 #
 # Usage:
-#     R --no-save < redmeat_survival_ownVM.R > output_redmeat_surv.txt
+#     stage_generic(c_study_index = c(1:2), str_filename_save = 'survival_meat_interact_mec_downstream_stage3.RData')
 #
 ######################################################################################
+
+stage_generic <- function(c_study_index, str_filename_save)
+{
 
 ####################
 # Load library
@@ -139,7 +142,8 @@ connections <- DSI::datashield.login(logins = logindata, assign = TRUE,
 
 # make it generic 
 # call for only first two
-connections_trunc <- connections[1:2]
+connections_trunc <- connections[c_study_index]
+# connections_trunc <- connections[1:2]
 
 #############################################
 # data filtering
@@ -707,8 +711,9 @@ require('DSOpal')
 #######################################################
 # save model output and logging information to disk
 #######################################################
-save.image(file = 'survival_meat_interact_mec_downstream_stage3.RData')
+save.image(file = str_filename_save)
     
 DSI::datashield.logout(conns = connections)
 
 
+}
