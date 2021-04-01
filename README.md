@@ -100,9 +100,15 @@ Graphical user interface (GUI) for privacy preserving federated survival model m
 
 	![Screenshot of GUI](screenshot.png)
 		
-* Writeup
+* Writeup and manuscript
+
+   * Manuscript folder
 
    * Forthcoming	
+
+* Presentations
+
+   * presentation folder
 
 * Citation
 
@@ -115,3 +121,7 @@ Graphical user interface (GUI) for privacy preserving federated survival model m
    * https://github.com/neelsoumya/dsSurvivalShiny
    
 
+* Acknowledgements
+
+   * DataSHIELD technical team
+   
