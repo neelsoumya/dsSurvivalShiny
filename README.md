@@ -23,7 +23,7 @@ Graphical user interface (GUI) for privacy preserving federated survival model m
 
 * build_man_test.R
 
-    * script to build manuals and test code
+    * script to build manuals and test code (testing script)
     
     * R --no-save < build_man_test.R  
    
