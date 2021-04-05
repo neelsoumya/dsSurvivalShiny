@@ -65,7 +65,7 @@ coxph_model_full_4 <- coxph_model_full
 #######################
 # call stage 5
 #######################
-stage_generic(c_study_index = c(14), str_filename_save = 'survival_meat_interact_mec_downstream_5.RData')
+stage_generic(c_study_index = c(15), str_filename_save = 'survival_meat_interact_mec_downstream_5.RData')
 
 # load Rdata file
 load(file = 'survival_meat_interact_mec_downstream_5.RData')
@@ -112,9 +112,9 @@ coxph_model_full_5 <- coxph_model_full
                     coxph_model_full_2$study11$coefficients[1,2],
                     coxph_model_full_3$study12$coefficients[1,2],
                     coxph_model_full_3$study13$coefficients[1,2],
-                    coxph_model_full_bkup$study14$coefficients[1,2],
-                    coxph_model_full_bkup$study15$coefficients[1,2],
-                    coxph_model_full_bkup$study16$coefficients[1,2]
+                    coxph_model_full_4$study14$coefficients[1,2],
+                    coxph_model_full_5$study15$coefficients[1,2]# ,
+                    # coxph_model_full_bkup$study16$coefficients[1,2]
     )
     
     # list of standard errors for third parameter over all 7 studies 
@@ -130,9 +130,9 @@ coxph_model_full_5 <- coxph_model_full
                     coxph_model_full_2$study11$coefficients[1,3],
                     coxph_model_full_3$study12$coefficients[1,3],
                     coxph_model_full_3$study13$coefficients[1,3],
-                    coxph_model_full_bkup$study14$coefficients[1,3],
-                    coxph_model_full_bkup$study15$coefficients[1,3],
-                    coxph_model_full_bkup$study16$coefficients[1,3]
+                    coxph_model_full_4$study14$coefficients[1,3],
+                    coxph_model_full_5$study15$coefficients[1,3]#,
+                    #coxph_model_full_bkup$study16$coefficients[1,3]
     )
     
     
