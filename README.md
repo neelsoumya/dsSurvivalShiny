@@ -26,6 +26,13 @@ Graphical user interface (GUI) for privacy preserving federated survival model m
     * script to build manuals and test code (testing script)
     
     * R --no-save < build_man_test.R  
+
+* build_man_test_git_add.sh
+
+    * shell script to build manuals, test code and commit to git all documentation
+
+    * ./build_man_test_git_add.sh
+   
    
 * vignettes
 
