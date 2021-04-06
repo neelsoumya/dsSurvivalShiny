@@ -699,7 +699,8 @@ require('DSOpal')
     cat(str_temp_formula_dynamic) 
      
     # call coxphSLMA()
-    coxph_model_full_bkup_stage3 <- dsBaseClient::ds.coxph.SLMA(formula = str_temp_formula_dynamic,
+    #   coxph_model_full_bkup_stage3
+    coxph_model_full <- dsBaseClient::ds.coxph.SLMA(formula = str_temp_formula_dynamic,
                                                     combine_with_metafor = FALSE, datasources = connections_trunc)
      
     
