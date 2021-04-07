@@ -13,7 +13,7 @@ Graphical user interface (GUI) for privacy preserving federated survival model m
 
     * script to start shiny server
     
-    * ``` R --no-save < RUN.R
+    * R --no-save < RUN.R
     
 * synthetic_data_generator.R
 
