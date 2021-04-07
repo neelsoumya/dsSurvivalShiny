@@ -149,7 +149,9 @@ Graphical user interface (GUI) for privacy preserving federated survival model m
 
 * Summary of set up
 
-    *     ```R
+    *    
+    
+          ```
 	
 		install.packages('devtools')
 		
