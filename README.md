@@ -132,3 +132,58 @@ Graphical user interface (GUI) for privacy preserving federated survival model m
 
    * DataSHIELD technical team
    
+
+
+
+
+### What is this repository for? ###
+
+* Quick summary
+
+    * GUI for meta-analysis of federated survival models
+
+* Version
+
+
+### How do I get set up? ###
+
+* Summary of set up
+
+    *     ```R
+	
+		install.packages('devtools')
+		
+		library(devtools)
+		
+		devtools::install_github('neelsoumya/dsSurvivalShiny')
+			
+		library(dsSurvivalShiny)
+	
+		dsSurvivalShiny::app()
+		
+		OR
+		
+		R --no-save < installer_R.R
+		
+		R --no-save < RUN.R
+	
+	 ```
+
+* Configuration
+* Dependencies
+* Database configuration
+* How to run tests
+
+      * R --no-save < build_man_test.R
+
+* Deployment instructions
+
+### Contribution guidelines ###
+
+* Writing tests
+* Code review
+* Other guidelines
+
+### Who do I talk to? ###
+
+* Soumya Banerjee, Tom Bishop and DataSHIELD technical team
