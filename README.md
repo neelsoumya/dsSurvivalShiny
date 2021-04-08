@@ -176,7 +176,7 @@ Graphical user interface (GUI) for privacy preserving federated survival model m
 * Database configuration
 * How to run tests
 
-      * R --no-save < build_man_test.R
+    * R --no-save < build_man_test.R
 
 * Deployment instructions
 
