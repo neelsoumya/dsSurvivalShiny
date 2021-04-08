@@ -189,3 +189,8 @@ Graphical user interface (GUI) for privacy preserving federated survival model m
 ### Who do I talk to? ###
 
 * Soumya Banerjee, Tom Bishop and DataSHIELD technical team
+
+* https://sites.google.com/site/neelsoumya/Home
+
+* sb2333@cam.ac.uk
+
