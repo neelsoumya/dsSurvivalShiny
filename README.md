@@ -180,15 +180,7 @@ Graphical user interface (GUI) for privacy preserving federated survival model m
 
 * Deployment instructions
 
-    * 
-     
-     ```
-     
-        library(dsSurvivalShiny)
-
-	dsSurvivalShiny::app()
-
-     ```
+   
 
 ### Contribution guidelines ###
 
