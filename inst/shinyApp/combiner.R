@@ -17,22 +17,27 @@ source('stage_generic.R')
 #######################
 # call stage 1
 #######################
-stage_generic(c_study_index = c(1:9), str_filename_save = 'survival_meat_interact_mec_downstream_1.RData')
+coxph_model_full <- stage_generic(c_study_index = c(1:9), str_filename_save = 'survival_meat_interact_mec_downstream_1.RData')
+
+# save image
+save.image(file = 'survival_meat_interact_mec_downstream_1.RData')
 
 # load Rdata file
-load(file = 'survival_meat_interact_mec_downstream_1.RData')
+# load(file = 'survival_meat_interact_mec_downstream_1.RData')
 
 # rename coxph model 
-
 coxph_model_full_1 <- coxph_model_full
 
 #######################
 # call stage 2
 #######################
-stage_generic(c_study_index = c(10:11), str_filename_save = 'survival_meat_interact_mec_downstream_2.RData')
+coxph_model_full <- stage_generic(c_study_index = c(10:11), str_filename_save = 'survival_meat_interact_mec_downstream_2.RData')
+
+# save image
+save.image(file = 'survival_meat_interact_mec_downstream_2.RData')
 
 # load Rdata file
-load(file = 'survival_meat_interact_mec_downstream_2.RData')
+# load(file = 'survival_meat_interact_mec_downstream_2.RData')
 
 # rename coxph model 
 coxph_model_full_2 <- coxph_model_full
