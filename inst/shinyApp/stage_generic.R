@@ -716,5 +716,7 @@ save.image(file = str_filename_save)
     
 DSI::datashield.logout(conns = connections)
 
+# return cox model
+return(coxph_model_full)  
 
 }
