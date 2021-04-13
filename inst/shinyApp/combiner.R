@@ -46,7 +46,7 @@ coxph_model_full_2 <- coxph_model_full
 #######################
 # call stage 3
 #######################
-stage_generic(c_study_index = c(12:13), str_filename_save = 'survival_meat_interact_mec_downstream_3.RData')
+coxph_model_full <- stage_generic(c_study_index = c(12:13), str_filename_save = 'survival_meat_interact_mec_downstream_3.RData')
 
 # load Rdata file
 load(file = 'survival_meat_interact_mec_downstream_3.RData')
@@ -58,7 +58,7 @@ coxph_model_full_3 <- coxph_model_full
 #######################
 # call stage 4 MEC
 #######################
-stage_generic(c_study_index = c(14), str_filename_save = 'survival_meat_interact_mec_downstream_4.RData')
+coxph_model_full <- stage_generic(c_study_index = c(14), str_filename_save = 'survival_meat_interact_mec_downstream_4.RData')
 
 # load Rdata file
 load(file = 'survival_meat_interact_mec_downstream_4.RData')
@@ -70,7 +70,7 @@ coxph_model_full_4 <- coxph_model_full
 #######################
 # call stage 5
 #######################
-stage_generic(c_study_index = c(15), str_filename_save = 'survival_meat_interact_mec_downstream_5.RData')
+coxph_model_full <- stage_generic(c_study_index = c(15), str_filename_save = 'survival_meat_interact_mec_downstream_5.RData')
 
 # load Rdata file
 load(file = 'survival_meat_interact_mec_downstream_5.RData')
