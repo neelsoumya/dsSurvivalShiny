@@ -37,6 +37,10 @@ Graphical user interface (GUI) for privacy preserving federated survival model m
 * vignettes
 
    * tutorials and vignettes
+
+* misc
+
+   * miscellaneous scripts for basic scripts and tutorials
    
 * NAMESPACE, DESCRIPTION
 
