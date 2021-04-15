@@ -17,6 +17,8 @@ source('stage_generic.R')
 #######################
 # call stage 1
 #######################
+
+# TODO: check if a Rdata file already exists, if so and is latest and is cached do not run again
 coxph_model_full <- stage_generic(c_study_index = c(1:9), str_filename_save = 'survival_meat_interact_mec_downstream_1.RData')
 
 # save image
