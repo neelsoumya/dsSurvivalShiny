@@ -87,3 +87,20 @@ haven::write_dta(data = dd,
 # 4. Save VM and make it available
 #    OR
 #    use datashield.table.assign datashield.assign.table
+
+setwd('/Users/mibber/Work/Projects/SOPHIA/WP2/dsSwissKnife/dsSwissKnife-example-main-new')
+
+# 2) Load the example data into local memory. 
+#### The local CNSIM data frame (in this session) contains the concatenated data of the 2 remote ones and will be used to compare the results of various operations
+load('CNSIM.rda')
+
+
+# 3) Login to the federated nodes
+logindata <- read.delim('logindata.txt') # read the login information
+logindata
+
+# log into the 2 remote servers:
+opals <- datashield.login(logindata)
+
+# load the CNSIM table from the 2 respective databases:
+datashield.assign(opals, 'cnsim', 'test.CNSIM')
