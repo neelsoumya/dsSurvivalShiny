@@ -25,6 +25,9 @@ R and rmarkdown files for GUI
 
    * script to perform harmonization
 
+* harmonization_testing.R
+
+   * framework to perform testing of harmonization Java code
 
 * stage1.R and stage2.R and combiner.R
 
