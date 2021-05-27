@@ -32,3 +32,7 @@ R and rmarkdown files for GUI
 * stage1.R and stage2.R and combiner.R
 
    * script to call servers sequentially and not in parallel
+
+* ds_profiler.R
+
+   * profiler for Cox functions
