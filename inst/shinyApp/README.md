@@ -29,6 +29,10 @@ R and rmarkdown files for GUI
 
    * framework to perform testing of harmonization Java code
 
+* synthetic_data_generator.R
+
+   * framework to generate synthetic data
+
 * stage1.R and stage2.R and combiner.R
 
    * script to call servers sequentially and not in parallel
