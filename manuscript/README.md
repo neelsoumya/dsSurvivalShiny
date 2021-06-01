@@ -1,3 +1,1 @@
-Manuscript
-
-Citation
+Manuscript and citation (forthcoming)
