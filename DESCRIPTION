@@ -1,6 +1,6 @@
 
 Package: dsSurvivalShiny
-Title: Graphical user interface for survival analysis in DataSHIELD
+Title: Graphical user interface and miscellaneous functions for survival analysis in DataSHIELD
 Version: 1.0.0
 Author: Soumya Banerjee and Tom Bishop and DataSHIELD technical team <sb2333@cam.ac.uk>
 Maintainer: Soumya Banerjee and Tom Bishop <sb2333@cam.ac.uk>
