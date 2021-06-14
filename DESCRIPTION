@@ -4,7 +4,7 @@ Title: Graphical user interface and miscellaneous functions for survival analysi
 Version: 1.0.0
 Author: Soumya Banerjee and Tom R P Bishop and DataSHIELD technical team <sb2333@cam.ac.uk>
 Maintainer: Soumya Banerjee and Tom R P Bishop <sb2333@cam.ac.uk>
-Description: Shiny app and miscellaneous tools for meta-analysis of survival models in DataSHIELD
+Description: Graphical user interface and miscellaneous tools for meta-analysis of survival models in DataSHIELD
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: True
