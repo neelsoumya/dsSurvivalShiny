@@ -87,9 +87,9 @@ This is a graphical user interface (GUI) for privacy preserving federated surviv
 
 # Usage
 
-	* install ShinySurvivalDataSHIELD package, load package and run
+Install ShinySurvivalDataSHIELD package, load package and run
 	
-	 ```R
+```R
 	
 		install.packages('devtools')
 		
@@ -107,7 +107,7 @@ This is a graphical user interface (GUI) for privacy preserving federated surviv
 		
 		R --no-save < RUN.R
 	
-	 ```
+```
 
 * Screenshot of graphical user interface
 
@@ -123,7 +123,7 @@ This is a graphical user interface (GUI) for privacy preserving federated surviv
 
    * presentation folder
 
-* Citation
+# Citation
 
    * Forthcoming
 
