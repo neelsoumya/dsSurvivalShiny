@@ -1,4 +1,6 @@
-Graphical user interface (GUI) for privacy preserving federated survival model meta-analysis using the DataSHIELD platform. This package uses the R shiny framework for federated meta-analysis of survival models.
+# Introduction
+
+This is a graphical user interface (GUI) for privacy preserving federated survival model meta-analysis using the DataSHIELD platform. This package uses the R shiny framework for federated meta-analysis of survival models.
 
 * inst/shinyApp
 
@@ -176,8 +178,6 @@ Graphical user interface (GUI) for privacy preserving federated survival model m
 
 * Configuration
 
-* Database configuration
-
 * How to run tests
 
     * R --no-save < build_man_test.R
@@ -188,11 +188,11 @@ Graphical user interface (GUI) for privacy preserving federated survival model m
 
 ### Usage ###
 
-	```
+```
 
-		R --no-save < RUN.R
+R --no-save < RUN.R
 	
-	```
+```
 
 
    
