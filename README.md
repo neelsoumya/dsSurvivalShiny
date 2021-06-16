@@ -146,12 +146,11 @@ Graphical user interface (GUI) for privacy preserving federated survival model m
 
     * GUI for meta-analysis of federated survival models
 
-* Version
 
 
 ### How do I get set up? ###
 
-* Summary of set up
+* Summary of installation
 
     *    
     
@@ -184,6 +183,17 @@ Graphical user interface (GUI) for privacy preserving federated survival model m
     * R --no-save < build_man_test.R
 
 * Deployment instructions
+
+
+
+### Usage ###
+
+	```
+
+		R --no-save < RUN.R
+	
+	```
+
 
    
 ### Who do I talk to? ###
