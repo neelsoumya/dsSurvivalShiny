@@ -54,4 +54,4 @@ install.packages(pkgs=pkgFile, type="source", repos=NULL)
 unlink(pkgFile)
 
 library(devtools)
-install_github("bonorico/gcipdr")
+devtools::install_github("bonorico/gcipdr")
