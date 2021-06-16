@@ -85,7 +85,7 @@ This is a graphical user interface (GUI) for privacy preserving federated surviv
      
         * Forthcoming 
 
-* Usage
+# Usage
 
 	* install ShinySurvivalDataSHIELD package, load package and run
 	
@@ -113,7 +113,7 @@ This is a graphical user interface (GUI) for privacy preserving federated surviv
 
 	![Screenshot of GUI](screenshot.png)
 		
-* Writeup and manuscript
+# Writeup and manuscript
 
    * Manuscript folder
 
@@ -127,7 +127,7 @@ This is a graphical user interface (GUI) for privacy preserving federated surviv
 
    * Forthcoming
 
-* Contact
+# Contact
  
    * Soumya Banerjee, Tom Bishop and DataSHIELD technical team
    
