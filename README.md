@@ -129,7 +129,7 @@ Install ShinySurvivalDataSHIELD package, load package and run
 
 # Contact
  
-   * Soumya Banerjee, Tom Bishop and DataSHIELD technical team
+   * Soumya Banerjee, Tom R P Bishop and DataSHIELD technical team
    
    * https://github.com/neelsoumya/dsSurvivalShiny
    
