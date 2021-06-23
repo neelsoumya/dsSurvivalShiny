@@ -1,4 +1,4 @@
-R and rmarkdown files for GUI
+R and rmarkdown files for graphical user interface and miscellaneous functions
 
 
 * server.R and ui.R
