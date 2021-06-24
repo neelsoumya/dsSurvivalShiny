@@ -48,3 +48,7 @@ R and rmarkdown files for graphical user interface and miscellaneous functions
 * ds_profiler.R
 
    * profiler for Cox functions
+
+   * also see
+
+        * https://github.com/neelsoumya/dsProfiler
