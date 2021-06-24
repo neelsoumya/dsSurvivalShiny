@@ -29,6 +29,10 @@ R and rmarkdown files for graphical user interface and miscellaneous functions
 
    * framework to perform testing of harmonization Java code
 
+   * also see
+
+        * https://github.com/neelsoumya/dsHarmoniseClient/blob/main/dslite_harm.R
+
 * synthetic_data_generator.R
 
    * framework to generate synthetic data
