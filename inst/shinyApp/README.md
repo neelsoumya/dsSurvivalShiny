@@ -9,9 +9,13 @@ R and rmarkdown files for graphical user interface and miscellaneous functions
 
    * helper functions
    
-* log_model_summary.rmd and log_data_summary.rmd
+* log_data_summary.rmd
 
-   * R markdown to generate reports
+   * R markdown to generate reproducible reports for data documentation
+
+* log_model_summary.rmd and
+
+   * R markdown to generate reproducible reports for model documentation
 
 * model_cards.rmd
 
