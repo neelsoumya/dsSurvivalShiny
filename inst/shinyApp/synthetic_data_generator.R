@@ -76,6 +76,9 @@ dd
 dd$TYPE_DIAB <- 2
 dd$i_status_out_cohort <- 1
 
+# TODO: use data_gen.R moms data frame adn mean, skew etc to 
+# geenrate dtaa from simstudy
+
 # 1. save as csv
 filename_synthetic_data = "df_synthetic_data.csv"
 write.table(dd, file=filename_synthetic_data,
@@ -106,3 +109,4 @@ opals <- datashield.login(logindata)
 
 # load the CNSIM table from the 2 respective databases:
 datashield.assign(opals, 'cnsim', 'test.CNSIM')
+
