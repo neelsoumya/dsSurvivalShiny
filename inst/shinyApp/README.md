@@ -45,6 +45,10 @@ R and rmarkdown files for graphical user interface and miscellaneous functions
 
         * https://github.com/neelsoumya/dsSynthetic
 
+* data_gen.R
+
+   * Code using Gaussian cupola to generate synthetic data
+
 * stage1.R and stage2.R and combiner.R
 
    * script to call servers sequentially and not in parallel
