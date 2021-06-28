@@ -101,7 +101,7 @@ moms = data.matrix(moms1, rownames.force = TRUE)
 # problem if all have same value, 
 corrs = ds.cor(x="my_frame")
 
-corr = corrs$server1$`Correlation Matrix`
+corr = corrs[[1]]$`Correlation Matrix`#corrs$server1$`Correlation Matrix`
 attr(corr, "corr.type") <- "moment.corr"
 
 names = columns
