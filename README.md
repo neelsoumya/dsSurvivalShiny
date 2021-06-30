@@ -1,6 +1,8 @@
 # Introduction
 
-This is a graphical user interface (GUI) and set of computational tools for privacy preserving federated survival model meta-analysis using the DataSHIELD platform. This package uses the R shiny framework for federated meta-analysis of survival models.
+This is a package with miscellaneous tools, a graphical user interface (GUI) and set of computational tools for privacy preserving federated survival model meta-analysis using the DataSHIELD platform. 
+
+This package uses the R shiny framework for federated meta-analysis of survival models.
 
 * inst/shinyApp
 
