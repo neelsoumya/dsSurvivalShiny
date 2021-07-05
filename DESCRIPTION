@@ -25,5 +25,6 @@ Imports:
     knitr,
     DSI,
     DSOpal,
-    simstudy
+    simstudy,
+    haven
 
