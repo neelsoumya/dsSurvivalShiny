@@ -115,9 +115,9 @@ Install ShinySurvivalDataSHIELD package, load package and run
 
 	![Screenshot of GUI](screenshot.png)
 		
-# Writeup and manuscript
+# Manuscript
 
-   * Manuscript folder
+   * Manuscript folder (package to be called dsSurvivalExtra or dsExtra)
 
    * Forthcoming	
 
