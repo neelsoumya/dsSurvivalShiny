@@ -35,9 +35,9 @@ def <- defData(varname = "AGE_BASE", dist = "normal",
 def <- defData(def, varname = "REDMEAT", dist = "normal", 
                formula = 100, variance = 10)
 def <- defData(def, varname = "FUP_OBJ", dist = "poisson", 
-               formula = "1.5 + REDMEAT", link = "log")
+               formula = "1.5 + REDMEAT", link = "identity")
 def <- defData(def, varname = "FUP_OBJ_SELF", dist = "poisson", 
-               formula = "1.5 + REDMEAT", link = "log")
+               formula = "1.5 + REDMEAT", link = "identity")
 
 def <- defData(def, varname = "REDMEATTOTAL", dist = "normal", 
                formula = 150, variance = 11)
@@ -79,6 +79,9 @@ dd$i_status_out_cohort <- 1
 # TODO: use data_gen.R moms data frame adn mean, skew etc to 
 # geenrate dtaa from simstudy
 
+#######################
+# save to disk
+#######################
 # 1. save as csv
 filename_synthetic_data = "df_synthetic_data.csv"
 write.table(dd, file=filename_synthetic_data,
