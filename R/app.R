@@ -23,6 +23,8 @@ app <- function()
       # run
       #     https://shiny.rstudio.com/reference/shiny/1.4.0/runApp.html
       #####################################################################
+      
+      # TODO: change this here to dsExtra or dsSurvivalExtra
       shiny::runApp(system.file('shinyApp', package = 'dsSurvivalShiny'))
 
 }
