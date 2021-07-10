@@ -91,10 +91,12 @@ write.table(dd, file=filename_synthetic_data,
 haven::write_dta(data = dd,
                  path ='C:/Users/sb2333/Downloads/data_synthetic_country1.dta')
 
+#############################################################
 # 3. upload to VM dev v2
 # 4. Save VM and make it available
 #    OR
 #    use datashield.table.assign datashield.assign.table
+#############################################################
 
 setwd('/Users/mibber/Work/Projects/SOPHIA/WP2/dsSwissKnife/dsSwissKnife-example-main-new')
 
