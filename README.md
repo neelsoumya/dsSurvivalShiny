@@ -144,7 +144,6 @@ Install ShinySurvivalDataSHIELD package, load package and run
 
 
 
-
 ### What is this repository for? ###
 
 * Quick summary
