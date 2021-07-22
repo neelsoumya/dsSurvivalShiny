@@ -1,6 +1,6 @@
 # dsSurvivalExtra/dsExtra
 
-# Introduction
+## Introduction
 
 This is a package with miscellaneous tools, a graphical user interface (GUI) and set of computational tools for privacy preserving federated survival model meta-analysis using the DataSHIELD platform. 
 
@@ -88,7 +88,7 @@ This is a package with miscellaneous tools, a graphical user interface (GUI) and
      
         * Forthcoming 
 
-# Usage
+## Usage
 
 Install ShinySurvivalDataSHIELD package, load package and run
 	
@@ -116,7 +116,7 @@ Install ShinySurvivalDataSHIELD package, load package and run
 
 	![Screenshot of GUI](screenshot.png)
 		
-# Manuscript
+## Manuscript
 
    * Manuscript folder (package to be called dsSurvivalExtra or dsExtra)
 
@@ -126,11 +126,11 @@ Install ShinySurvivalDataSHIELD package, load package and run
 
    * presentation folder
 
-# Citation
+## Citation
 
    * Forthcoming
 
-# Contact
+## Contact
  
    * Soumya Banerjee, Tom R P Bishop and DataSHIELD technical team
    
