@@ -1,5 +1,5 @@
 ######################################################################################
-# Meta-analysis of survival models in DataSHIELD for the red meat project
+# Meta-analysis of survival models in DataSHIELD for the red-meat project
 #	
 # Additional code in:
 #   https://github.com/neelsoumya/dsBaseClient/tree/absolute_newbie_client
