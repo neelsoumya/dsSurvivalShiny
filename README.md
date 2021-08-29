@@ -47,6 +47,7 @@ This is a package with miscellaneous tools, a set of computational tools and a g
 
    * miscellaneous scripts for basic scripts and tutorials
    
+   
 * NAMESPACE, DESCRIPTION
 
    * files for package
