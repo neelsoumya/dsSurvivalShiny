@@ -201,7 +201,7 @@ R --no-save < RUN.R
    
 ### Who do I talk to? ###
 
-* Soumya Banerjee, Tom R P Bishop and DataSHIELD technical team
+* Soumya Banerjee, Tom R. P. Bishop and DataSHIELD technical team
 
 * https://sites.google.com/site/neelsoumya/Home
 
