@@ -404,7 +404,7 @@ Descriptive summary statistics of data.
     # cat("Redmeat covariate  \n") 
     #print(dsBaseClient::ds.summary(x = 'D$REDMEAT'))
     cat("Summary statistics .... \n") 
-    list_stats_summary <- dsHelper::dh.getStats(conns = connections, df = 'D', vars = c('age', 'female') ) # vars = c('REDMEAT','OFFALS','POULTRY','REDMEATTOTAL') )  
+    list_stats_summary <- dsHelper::dh.getStats(conns = connections, df = 'D', vars = c('age.60', 'female', 'starttime', 'endtime') ) # vars = c('REDMEAT','OFFALS','POULTRY','REDMEATTOTAL') )  
     
 ```
 
@@ -425,7 +425,7 @@ The amount of missing for each covariate is shown below. The table shows if ther
 ```{r, include = FALSE}
 
     cat("Degree of missingness in various studies ..... \n") 
-    dt_missingness <- dsHelper::dh.anyData(conns = connections,  df = 'D', vars = c('REDMEAT','OFFALS','POULTRY','REDMEATTOTAL') ) 
+    dt_missingness <- dsHelper::dh.anyData(conns = connections,  df = 'D', vars = c('age.60', 'female', 'starttime', 'endtime') ) 
 ```
 
 ```{r, echo = FALSE}
