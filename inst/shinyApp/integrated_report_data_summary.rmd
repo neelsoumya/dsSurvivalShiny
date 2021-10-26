@@ -6,8 +6,7 @@ output:
 
 # Introduction {#intro}
 
-This is a document that outlines a vignette for implementing privacy preserving survival models
-and meta-analyzing hazard ratios in the DataSHIELD platform.
+This is a document that outlines a vignette for implementing privacy preserving survival models, meta-analyzing hazard ratios in the DataSHIELD platform and performing data documentation.
 
 <!-- You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods). -->
 
@@ -393,9 +392,18 @@ library(dsHelper)
 ```
 
 
-## Descriptive statistics of data
+### Descriptive statistics of data
 
-Descriptive summary statistics of data.
+We show below how to generate descriptive summary statistics of data.
+
+```{r eval=FALSE}
+
+library(dsHelper)
+
+list_stats_summary <- dsHelper::dh.getStats(conns = connections, df = 'D', vars = c('age.60', 'female', 'starttime', 'endtime') ) # vars = c('REDMEAT','OFFALS','POULTRY','REDMEATTOTAL') )  
+
+```
+
 
 ```{r, include = FALSE}
     
@@ -408,6 +416,13 @@ Descriptive summary statistics of data.
     
 ```
 
+```{r eval=FALSE}
+
+knitr::kable(as.data.frame(list_stats_summary$categorical))
+knitr::kable(as.data.frame(list_stats_summary$continuous))
+   
+```
+
 ```{r, echo = FALSE}
 
     knitr::kable(as.data.frame(list_stats_summary$categorical))
@@ -416,9 +431,9 @@ Descriptive summary statistics of data.
 
 ```
 
-## Data quality and understanding covariates
+### Data quality and understanding covariates
 
-### Missingness of covariates
+#### Missingness of covariates
 
 The amount of missing for each covariate is shown below. The table shows if there are any covariates that are missing for any study.
 
