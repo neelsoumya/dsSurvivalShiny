@@ -437,6 +437,14 @@ knitr::kable(as.data.frame(list_stats_summary$continuous))
 
 The amount of missing for each covariate is shown below. The table shows if there are any covariates that are missing for any study.
 
+```{r eval=FALSE}
+
+    dt_missingness <- dsHelper::dh.anyData(conns = connections,  df = 'D', vars = c('age.60', 'female', 'starttime', 'endtime') ) 
+
+    knitr::kable(dt_missingness)
+
+```
+
 ```{r, include = FALSE}
 
     cat("Degree of missingness in various studies ..... \n") 
