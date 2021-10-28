@@ -394,7 +394,7 @@ library(dsHelper)
 
 ### Descriptive statistics of data
 
-We show below how to generate descriptive summary statistics of data. Knowing this helps the analyst understand the characteristics of the data better. The analysyt can then perform data transformations (if necessary) and build the appropriate survival models.
+We show below how to generate descriptive summary statistics of data. Knowing this helps the analyst understand the characteristics of the data better. The analyst can then perform data transformations (if necessary) and build the appropriate survival models.
 
 ```{r eval=FALSE}
 
