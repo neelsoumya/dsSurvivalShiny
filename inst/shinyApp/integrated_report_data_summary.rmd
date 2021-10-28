@@ -394,7 +394,7 @@ library(dsHelper)
 
 ### Descriptive statistics of data
 
-We show below how to generate descriptive summary statistics of data.
+We show below how to generate descriptive summary statistics of data. Knowing this helps the analyst understand the characteristics of the data better. The analysyt can then perform data transformations (if necessary) and build the appropriate survival models.
 
 ```{r eval=FALSE}
 
@@ -435,7 +435,8 @@ knitr::kable(as.data.frame(list_stats_summary$continuous))
 
 #### Missingness of covariates
 
-The amount of missing for each covariate is shown below. The table shows if there are any covariates that are missing for any study.
+The amount of missing for each covariate is shown below. The table shows if there are any covariates that are missing for any study. If covariates are missing, this may lead to warnings or convergence issues in survival models. Knowing this in advance, the analyst can make approporiate modifications or transformations to the data.
+
 
 ```{r eval=FALSE}
 
@@ -461,7 +462,16 @@ The amount of missing for each covariate is shown below. The table shows if ther
 
 ### Variable types of covariates
 
-This summarizes if the covariates are of the same type or class in each study.
+This summarizes if the covariates are of the same type or class in each study. Knowing this in advance can prevent errors or convergence issues in survival models.
+
+```{r eval=FALSE}
+
+  dt_type_information <- dsHelper::dh.classDiscrepancy(conns = connections, df = 'D', vars = NULL)
+
+  knitr::kable(dt_type_information)
+  
+```
+
 
 
 ```{r, include = FALSE}
