@@ -400,7 +400,10 @@ We show below how to generate descriptive summary statistics of data. Knowing th
 
 library(dsHelper)
 
-list_stats_summary <- dsHelper::dh.getStats(conns = connections, df = 'D', vars = c('age.60', 'female', 'starttime', 'endtime') ) # vars = c('REDMEAT','OFFALS','POULTRY','REDMEATTOTAL') )  
+list_stats_summary <- dsHelper::dh.getStats(conns = connections, 
+                                            df = 'D', 
+					    vars = c('age.60', 'female', 'starttime', 'endtime') 
+					    ) 
 
 ```
 
@@ -440,7 +443,10 @@ The amount of missing for each covariate is shown below. The table shows if ther
 
 ```{r eval=FALSE}
 
-    dt_missingness <- dsHelper::dh.anyData(conns = connections,  df = 'D', vars = c('age.60', 'female', 'starttime', 'endtime') ) 
+    dt_missingness <- dsHelper::dh.anyData(conns = connections,  
+                                           df = 'D', 
+					   vars = c('age.60', 'female', 'starttime', 'endtime')
+					   ) 
 
     knitr::kable(dt_missingness)
 
@@ -450,6 +456,7 @@ The amount of missing for each covariate is shown below. The table shows if ther
 
     cat("Degree of missingness in various studies ..... \n") 
     dt_missingness <- dsHelper::dh.anyData(conns = connections,  df = 'D', vars = c('age.60', 'female', 'starttime', 'endtime') ) 
+
 ```
 
 ```{r, echo = FALSE}
@@ -466,7 +473,9 @@ This summarizes if the covariates are of the same type or class in each study. K
 
 ```{r eval=FALSE}
 
-  dt_type_information <- dsHelper::dh.classDiscrepancy(conns = connections, df = 'D', vars = NULL)
+  dt_type_information <- dsHelper::dh.classDiscrepancy(conns = connections, 
+                                                       df = 'D',
+						       vars = NULL)
 
   knitr::kable(dt_type_information)
   
