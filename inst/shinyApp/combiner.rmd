@@ -25,6 +25,7 @@ library(metafor)
 # save.image(file = 'survival_meat_interact_mec_downstream_1.RData')
 
 # load Rdata file
+# call fault_tolerant.rmd
 load(file = 'analysis_batch1.RData')
 
 # rename coxph model 
@@ -39,6 +40,7 @@ coxph_model_full_1 <- coxph_model_full
 # save.image(file = 'survival_meat_interact_mec_downstream_2.RData')
 
 # load Rdata file
+# call fault_tolerant_2.rmd
 load(file = 'analysis_batch2.RData')
 
 # rename coxph model 
