@@ -40,6 +40,8 @@ install.packages('shinyjs')
 devtools::install_github(repo = 'https://github.com/lifecycle-project/ds-helper/', ref = 'completecases' )
 library(dsHelper)
 
+devtools::install_github('https://github.com/neelsoumya/dsSurvivalClient')
+
 devtools::install_github('https://github.com/neelsoumya/dsSurvivalShiny')#, force = TRUE)
 library(dsSurvivalShiny)
 install.packages('simstudy')
