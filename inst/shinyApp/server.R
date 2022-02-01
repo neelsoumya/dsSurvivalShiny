@@ -21,6 +21,7 @@ library(dsBase)
 library(dsBaseClient)
 require('DSI')
 require('DSOpal')
+library(dsSurvivalClient)
 
 ###########################
 # load data in DataSHIELD
@@ -168,8 +169,8 @@ shinyServer(function(input, output) {
     cat(str_temp_formula_dynamic) 
      
     # call coxphSLMA()
-    coxph_model_full <- dsBaseClient::ds.coxph.SLMA(formula = str_temp_formula_dynamic,
-                                                    combine_with_metafor = FALSE)
+    coxph_model_full <- dsSurvivalClient::ds.coxph.SLMA(formula = str_temp_formula_dynamic,
+                                                        combine_with_metafor = FALSE)
      
     #if (input$exposure == 'redmeat')
     #{
