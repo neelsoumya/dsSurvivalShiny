@@ -14,6 +14,7 @@ library(survminer)
 require('DSI')
 require('DSOpal')
 require('dsBaseClient')
+library(dsSurvivalClient)
 
 #################################################
 # Load data
