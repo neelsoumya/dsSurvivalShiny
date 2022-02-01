@@ -24,6 +24,7 @@ library(ggplot2)
 require('DSI')
 require('DSOpal')
 require('dsBaseClient')
+library(dsSurvivalClient)
 
 #################################################
 # Load data
@@ -467,11 +468,11 @@ ds.assign(toAssign = "(i_status_out_cohort*0.00001) + ((1-i_status_out_cohort)*S
 # 	https://github.com/neelsoumya/dsBase/blob/absolute_newbie/R/coxphSLMADS.R
 
 # 1. use constructed surv object in coxph
-dsBaseClient::ds.Surv(time='SURVTIME', event = 'EVENT', objectname='surv_object', datasources = connections_trunc)
+dsSurvivalClient::ds.Surv(time='SURVTIME', event = 'EVENT', objectname='surv_object', datasources = connections_trunc)
 
-dsBaseClient::ds.Surv(time='PRENTICETIME', event = 'EVENT', objectname='surv_object_prentice', datasources = connections_trunc) 
+dsSurvivalClient::ds.Surv(time='PRENTICETIME', event = 'EVENT', objectname='surv_object_prentice', datasources = connections_trunc) 
 
-dsBaseClient::ds.Surv(time='PRENTICETIME_SELF', event = 'EVENT_SELF', objectname='surv_object_prentice_self', datasources = connections_trunc) 
+dsSurvivalClient::ds.Surv(time='PRENTICETIME_SELF', event = 'EVENT_SELF', objectname='surv_object_prentice_self', datasources = connections_trunc) 
 
 #############################################
 # Model 1
@@ -614,6 +615,7 @@ library(dsBase)
 library(dsBaseClient)
 require('DSI')
 require('DSOpal')
+library(dsSurvivalClient)
 
     ################################### 
     # all individual meat exposures
@@ -700,7 +702,7 @@ require('DSOpal')
      
     # call coxphSLMA()
     #   coxph_model_full_bkup_stage3
-    coxph_model_full <- dsBaseClient::ds.coxph.SLMA(formula = str_temp_formula_dynamic,
+    coxph_model_full <- dsSurvivalClient::ds.coxph.SLMA(formula = str_temp_formula_dynamic,
                                                     combine_with_metafor = FALSE, datasources = connections_trunc)
      
     
