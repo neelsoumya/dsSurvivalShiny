@@ -54,6 +54,7 @@ require('DSI')
 require('DSOpal')
 require('dsBaseClient')
 library(dsHelper)
+library(dsSurvivalClient)
 
 ```
 
