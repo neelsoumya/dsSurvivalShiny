@@ -17,6 +17,7 @@ fn_recompute <- function(input_e_min,
              ####################
              require(dsBase)
              require(dsBaseClient)
+             require(dsSurvivalClient)
 
              #############################################
              # data filtering
@@ -321,7 +322,7 @@ fn_recompute <- function(input_e_min,
             # 1. use constructed surv object in coxph
             # dsBaseClient::ds.Surv(time='SURVTIME', event = 'EVENT', objectname='surv_object')
 
-            dsBaseClient::ds.Surv(time='PRENTICETIME', event = 'EVENT', objectname='surv_object_prentice') 
+            dsSurvivalClient::ds.Surv(time='PRENTICETIME', event = 'EVENT', objectname='surv_object_prentice') 
 
             # dsBaseClient::ds.Surv(time='PRENTICETIME_SELF', event = 'EVENT_SELF', objectname='surv_object_prentice_self') 
 
@@ -368,6 +369,7 @@ generic_statistical_modelling <- function(str_outcome_variable,
     require(dsBase)
     require(dsBaseClient)
     require(dsHelper)
+    require(dsSurvivalClient)
     
     
     # modify formula to make sure that covariates exist in these studies
@@ -416,7 +418,7 @@ generic_statistical_modelling <- function(str_outcome_variable,
               if (str_model_type == 'survival')
               {  
                      # call coxphSLMA() for survival models
-                     model <- dsBaseClient::ds.coxph.SLMA(formula = str_formula, 
+                     model <- dsSurvivalClient::ds.coxph.SLMA(formula = str_formula, 
                                                           combine_with_metafor = TRUE,
                                                           datasources = connections)
                 
@@ -504,7 +506,7 @@ generic_statistical_modelling <- function(str_outcome_variable,
               {  
                      # call coxphSLMA() for survival models
                      # with connection to current connection for this study
-                     model <- dsBaseClient::ds.coxph.SLMA(formula = str_formula, 
+                     model <- dsSurvivalClient::ds.coxph.SLMA(formula = str_formula, 
                                                           datasources = cn_temp_connection)
                 
                      # append to list of all models
@@ -526,7 +528,7 @@ generic_statistical_modelling <- function(str_outcome_variable,
                       # in same order as list_covariate
                       # then whichever are missing in that whittle that down
                       # cat(str_formula, "new formula in D \n")
-                      model <- dsBaseClient::ds.coxph.SLMA(formula = str_formula,
+                      model <- dsSurvivalClient::ds.coxph.SLMA(formula = str_formula,
                                                            datasources = cn_temp_connection)#,
                                                            #dataName = 'D')
                   
