@@ -1,1 +1,1 @@
-tests for survival models
+tests for survival models and functionality
