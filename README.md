@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a package with miscellaneous tools, a set of computational tools and a graphical user interface (GUI) for privacy preserving federated survival model meta-analysis using the DataSHIELD platform. 
+This is a package with miscellaneous tools, a set of computational tools and a graphical user interface (GUI) for privacy preserving federated survival model meta-analysis using the DataSHIELD platform. The primary function is to enable data and model documentation.
 
 
 * inst/shinyApp
@@ -117,11 +117,7 @@ Install ShinySurvivalDataSHIELD package, load package and run
 
 	![Screenshot of GUI](screenshot.png)
 		
-## Manuscript
 
-   * Manuscript folder (package to be called dsSurvivalExtra or dsExtra)
-
-   * Forthcoming	
 
 * Presentations
 
@@ -149,7 +145,7 @@ Install ShinySurvivalDataSHIELD package, load package and run
 
 * Quick summary
 
-    * GUI for meta-analysis of federated survival models
+    * GUI for data and model documentation and meta-analysis of federated survival models
 
 
 
