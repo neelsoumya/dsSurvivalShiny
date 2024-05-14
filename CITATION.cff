@@ -3,10 +3,7 @@ message: "If you use this software, please cite it as below."
 authors:
 - family-names: "Banerjee"
   given-names: "Soumya"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
-- family-names: "Bishop"
-  given-names: "Tom"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
+  orcid: "https://orcid.org/0000-0001-7748-9885"
 title: "dsSurvivalShiny"
 version: 1.0.0
 doi: 10.5281/zenodo.1234
