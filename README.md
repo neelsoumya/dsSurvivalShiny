@@ -130,9 +130,11 @@ Install ShinySurvivalDataSHIELD package, load package and run
 
 ## Contact
  
-   * Soumya Banerjee, Tom R P Bishop and DataSHIELD technical team
-   
+   * Soumya Banerjee
+     
    * https://github.com/neelsoumya/dsSurvivalShiny
+
+   * sb2333@cam.ac.uk
    
 
 * Acknowledgements
@@ -154,7 +156,7 @@ Install ShinySurvivalDataSHIELD package, load package and run
 
 * Summary of installation
 
-    *    
+     
     
           ```
 	
