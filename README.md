@@ -158,7 +158,7 @@ Install ShinySurvivalDataSHIELD package, load package and run
 
      
     
-          ```
+          ```R
 	
 		install.packages('devtools')
 		
@@ -190,7 +190,7 @@ Install ShinySurvivalDataSHIELD package, load package and run
 
 ### Usage ###
 
-```
+```R
 
 R --no-save < RUN.R
 	
