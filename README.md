@@ -190,11 +190,10 @@ Install ShinySurvivalDataSHIELD package, load package and run
 
 ### Usage ###
 
-```R
+
 
 R --no-save < RUN.R
 	
-```
 
 
    
